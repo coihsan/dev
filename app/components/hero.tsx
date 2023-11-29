@@ -1,7 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import { position } from "../constants/data";
 import CalltoAction from "../UI/CalltoAction";
 import CopyButton from "../UI/CopyButton";
+import { motion } from "framer-motion";
+import { container, item } from "../constants/animate";
+
 export default function Hero() {
   const times = new Date().getHours();
   var greeting;
@@ -16,8 +21,9 @@ export default function Hero() {
   return (
     <section className="relative heroSection w-full h-[100vh]">
       <div className="styleSection w-full h-full justify-evenly max-[600px]:flex-col max-[600px]:items-center">
-        <div className="boxWrapper">
-          <Image
+        <div className="boxWrapper" variants={container}>
+          <motion.Image
+            variants={item}
             className="rounded-full max-[600px]:w-[200px]"
             src={"/avatar.jpeg"}
             width={300}
@@ -25,26 +31,31 @@ export default function Hero() {
             alt="avatar"
           />
         </div>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-6">
           <div className="max-[600px]:mx-auto w-max bg-gradient-to-r from-[#696969] to-[#525252] rounded-full p-px">
-            <h3 className="w-max bg-gradient-to-r from-neutral-700 to-zinc-900 rounded-full px-4 py-1">
+            <h3 className="w-max bg-gradient-to-r from-neutral-700 to-zinc-900 rounded-full px-4 py-1 font-medium">
               {greeting} 👋🏻
             </h3>
           </div>
-          <h2 className="text-7xl max-[600px]:text-6xl font-bold max-[600px]:text-center">
-            ˗ˏˋ Ihsan ˎˊ
-          </h2>
+          <div>
+            <h2
+              className="text-7xl max-[600px]:text-6xl font-bold max-[600px]:text-center"
+              variants={item}
+            >
+              ˗ˏˋ Ihsan ˎˊ
+            </h2>
+          </div>
           <div className="grid grid-cols-2 gap-3 max-[600px]:mx-auto w-full">
             {position.map((index) => (
               <div
                 key={index.id}
-                className="w-max flex items-center gap-2 bg-[#141414] rounded-full px-4 py-2 "
+                className="w-max flex items-center gap-2 bg-[#262626] rounded-full px-6 py-2 max-[600px]:px-4 font-medium"
               >
                 <svg
                   className="rotate-[45deg] fill-white"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
+                  width="18"
+                  height="18"
                   viewBox="0 0 24 24"
                 >
                   <path d="M10 3H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM9 9H5V5h4v4zm5 2h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm1-6h4v4h-4V5zM3 20a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v6zm2-5h4v4H5v-4zm8 5a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v6zm2-5h4v4h-4v-4z"></path>
