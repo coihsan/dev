@@ -20,3 +20,15 @@ body {
   color: #f0f0f0;
   background-color: #121212;
 }
+
+@layer utilities {
+  .styleSection {
+    @apply flex items-center gap-3 max-w-screen-lg max-[600px]:px-[1.2rem] max-[600px]:py-[4rem] py-[7rem] w-full;
+  }
+  .boxWrapper {
+    @apply bg-gradient-to-r from-[#E3E3E3] to-[#3D3D3D];
+  }
+  .boxContain {
+    @apply bg-[#141414] flex items-center gap-2;
+  }
+}
