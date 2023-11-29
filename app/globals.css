@@ -23,13 +23,32 @@ body {
   margin: 0;
   scroll-behavior: smooth;
 }
-
+.heroSection::before,
+.heroSection::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.heroSection::before {
+  top: -10px;
+  background-image: url(/dot.svg);
+  z-index: -2;
+}
+.heroSection::after {
+  top: 0;
+  background-image: url(/light.svg);
+  z-index: -1;
+}
 @layer utilities {
   .styleSection {
-    @apply flex items-center gap-3 max-w-screen-lg max-[600px]:px-[1.2rem] max-[600px]:py-[4rem] py-[7rem] w-full mx-auto;
+    @apply flex items-center gap-3 max-w-screen-lg max-[600px]:px-[2rem] max-[600px]:py-[4rem] py-[7rem] w-full mx-auto;
   }
   .boxWrapper {
-    @apply bg-gradient-to-r from-[#E3E3E3] to-[#3D3D3D] p-[1px] rounded-lg;
+    @apply bg-gradient-to-r from-[#E3E3E3] to-[#3D3D3D] p-[1px] rounded-full;
   }
   .boxContain {
     @apply bg-[#141414] flex items-center gap-2;
