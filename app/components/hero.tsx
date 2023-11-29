@@ -20,17 +20,17 @@ export default function Hero() {
   }
   return (
     <section className="relative heroSection w-full h-[100vh]">
-      <div className="styleSection w-full h-full justify-evenly max-[600px]:flex-col max-[600px]:items-center">
-        <div className="boxWrapper" variants={container}>
-          <motion.Image
+      <div className="styleSection w-full h-full justify-start max-[600px]:flex-col max-[600px]:justify-center gap-6 max-[600px]:items-center">
+        <motion.div className="boxWrapper rounded-[54px]" variants={container}>
+          <Image
             variants={item}
-            className="rounded-full max-[600px]:w-[200px]"
+            className="rounded-[54px] max-[600px]:w-[200px]"
             src={"/avatar.jpeg"}
             width={300}
             height={300}
             alt="avatar"
           />
-        </div>
+        </motion.div>
         <div className="flex flex-col gap-6">
           <div className="max-[600px]:mx-auto w-max bg-gradient-to-r from-[#696969] to-[#525252] rounded-full p-px">
             <h3 className="w-max bg-gradient-to-r from-neutral-700 to-zinc-900 rounded-full px-4 py-1 font-medium">
