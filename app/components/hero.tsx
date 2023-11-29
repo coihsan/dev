@@ -12,10 +12,10 @@ export default function Hero() {
     greeting = "good evening";
   }
   return (
-    <section className="styleSection flex items-center max-[600px]:flex-col">
-      <div>
+    <section className="styleSection justify-evenly max-[600px]:flex-col ">
+      <div className="boxWrapper">
         <Image
-          className=""
+          className="rounded-lg"
           src={"/avatar.jpeg"}
           width={300}
           height={300}
@@ -26,10 +26,12 @@ export default function Hero() {
         <h3>{greeting}</h3>
         <h2 className="text-7xl font-bold">˗ˏˋ Ihsan ˎˊ</h2>
         <div>
-          <div className="flex items-center">
+          <div className="flex items-center bg-[#141414]">
             <span>Digital Marketing</span>
           </div>
-          <span> Frontend Dev</span>
+          <div className="flex items-center bg-[#141414]">
+            <span>Frontend Dev</span>
+          </div>
         </div>
       </div>
     </section>
