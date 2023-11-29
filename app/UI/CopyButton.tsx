@@ -15,7 +15,7 @@ const CopyButton = ({ textButton, textCopy }) => {
 
   return (
     <button
-      className="flex w-max shadow-md gap-2 items-center justify-center px-4 py-2 rounded-md border border-neutral-800 text-neutral-50 font-[500] bg-neutral-50 hover:bg-neutral-200 focus:outline-none"
+      className="flex w-max shadow-md gap-2 items-center justify-center px-4 py-2 rounded-full  text-neutral-50 font-[500] bg-zinc-50 hover:bg-neutral-200 focus:outline-none"
       onClick={handleCopyClick}
       style={{ color: isCopied ? "#a3a3a3" : "#171717" }}
     >

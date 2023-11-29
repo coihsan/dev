@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { position } from "../constants/data";
 import CalltoAction from "../UI/CalltoAction";
-import buttonCopy from "../UI/buttonCopy";
+import CopyButton from "../UI/CopyButton";
 export default function Hero() {
   const times = new Date().getHours();
   var greeting;
@@ -26,13 +26,15 @@ export default function Hero() {
           />
         </div>
         <div className="flex flex-col gap-3">
-          <h3 className="w-amx bg-gradient-to-r from-neutral-700 to-zinc-900 rounded-full px-4 py-1">
-            {greeting} 👋🏻
-          </h3>
-          <h2 className="text-7xl max-[600px]:text-4xl font-bold ">
+          <div className="max-[600px]:mx-auto w-max bg-gradient-to-r from-[#696969] to-[#525252] rounded-full p-px">
+            <h3 className="w-max bg-gradient-to-r from-neutral-700 to-zinc-900 rounded-full px-4 py-1">
+              {greeting} 👋🏻
+            </h3>
+          </div>
+          <h2 className="text-7xl max-[600px]:text-6xl font-bold max-[600px]:text-center">
             ˗ˏˋ Ihsan ˎˊ
           </h2>
-          <div className="grid grid-cols-2 ">
+          <div className="grid grid-cols-2 gap-3 max-[600px]:mx-auto w-full">
             {position.map((index) => (
               <div
                 key={index.id}
@@ -51,7 +53,7 @@ export default function Hero() {
               </div>
             ))}
           </div>
-          <div className="flex gap-3 items-center">
+          <div className="flex gap-3 items-center max-[600px]:mx-auto">
             <p>Credentials :</p>
             <div className="flex gap-3 items-center">
               <div className="flex gap-3 items-center">
@@ -69,9 +71,13 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div className="flex gap-3">
+          <div className="flex gap-3 max-[600px]:mx-auto">
             <CalltoAction />
-            <buttonCopy />
+            <CopyButton
+              className="pl-[25px] w-[100%]"
+              textButton="E-Mail"
+              textCopy="co.ihsan@gmail.com"
+            />
           </div>
         </div>
       </div>
