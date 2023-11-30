@@ -107,3 +107,21 @@ export const skillList = [
     alt: "github",
   },
 ];
+
+export const commonjob = [
+  { id: 0, title: "Landing Page Creation" },
+  { id: 1, title: "Graphic Design" },
+  { id: 2, title: "PPC" },
+  { id: 3, title: "On-Page SEO" },
+  { id: 4, title: "SEMRush" },
+  { id: 5, title: "Off-Page SEO" },
+  { id: 6, title: "WordPress (administrator)" },
+  { id: 7, title: "Google Analytics" },
+  { id: 8, title: "Google Search Console" },
+  { id: 9, title: "Event Marketing" },
+  { id: 10, title: "Google My Business" },
+  { id: 11, title: "Photgraph" },
+  { id: 12, title: "Google Search Console" },
+  { id: 13, title: " Marketplace / E-Commerce" },
+  { id: 14, title: " Meta Ads" },
+];

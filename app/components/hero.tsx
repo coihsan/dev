@@ -11,9 +11,9 @@ export default function Hero() {
   const times = new Date().getHours();
   var greeting;
 
-  if (times > 3 && times <= 11) {
+  if (times >= 3 && times < 12) {
     greeting = "Good Morning";
-  } else if (times > 12 && times < 17) {
+  } else if (times >= 12 && times < 17) {
     greeting = "Good Afternoon";
   } else {
     greeting = "Good Evening";
