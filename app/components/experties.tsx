@@ -13,9 +13,7 @@ export default function Experties() {
               height={40}
               alt="icon terminal"
             />
-            <h3 className="headingStyle align-baseline pl-[1rem]">
-              Code for Fun
-            </h3>
+            <h3 className="headingStyle align-baseline pl-[1rem]">Experties</h3>
           </div>
 
           <div className="pl-[3.7rem] max-[600px]:pl-[3.1rem]">

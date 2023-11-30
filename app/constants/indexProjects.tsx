@@ -25,7 +25,7 @@ export const ProjectList = [
     nameOfProjects: "Jhon Doe Portofolio + Blog Page",
     categoryProject: "#template",
     codeProject: "Vite/React/Pure CSS",
-    imageLink: "",
+    imageLink: "/jhondoe.webp",
     urlPreview: "https://coihsan.github.io/jhon-doe-template-pure-html/",
     urlDownload:
       "https://github.com/coihsan/jhon-doe-template-pure-html/archive/refs/heads/main.zip",
@@ -36,7 +36,7 @@ export const ProjectList = [
     nameOfProjects: "Mack Smith - Portofolio Web Page",
     categoryProject: "#template",
     codeProject: "HTML/CSS/JS",
-    imageLink: "",
+    imageLink: "/macksmith.webp",
     urlPreview: "https://macksmith-template.stackblitz.io/",
     urlDownload: "ss",
   },
