@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import { skillList } from "../constants/data";
 export default function Experties() {
   return (
     <section className="styleSection">
@@ -20,29 +20,18 @@ export default function Experties() {
             I can handle jobs like a Digital Marketing, Build a Web, and Graphic
             Design in the marketing department with a team or individually.
           </span>
-          <p>
-            nulla cursus magna, nec finibus augue felis nec lectus. Vivamus
-            fringilla non libero at egestas. Proin et dui et erat rhoncus
-            lacinia. Donec feugiat arcu est, eu rhoncus eros pretium ut. Duis
-            aliquam vehicula massa eu pulvinar. Aenean faucibus mauris a urna
-            posuere mollis. Aenean non laoreet diam. Praesent quis sollicitudin
-            leo, vitae lobortis metus. In quis imperdiet orci, et eleifend
-            justo. Nunc vel consectetur dolor. Pellentesque vel sem nisl.
-            Suspendisse varius vehicula arcu ut ultrices. Integer nec nisl
-            venenatis, consequat diam eu, hendrerit purus. Donec elementum velit
-            non urna consectetur, id fermentum justo ultricies. Donec volutpat
-            sed justo eget luctus. Morbi tincidunt at lectus eu tincidunt. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod
-            semper metus id lobortis. Pellentesque sed urna ut massa feugiat
-            viverra. Pellentesque vulputate quam non enim rutrum sodales sit
-            amet at orci. Nunc blandit neque sit amet velit laoreet feugiat.
-            Suspendisse metus nunc, malesuada non sapien et, aliquet mollis
-            odio. Sed sem neque, fringilla eu velit sed, egestas ullamcorper
-            purus. Mauris vel cursus lectus. Nunc vitae diam ac erat luctus
-            rhoncus eget et libero. Donec ac vestibulum sem. Cras nunc ipsum,
-            elementum viverra efficitur at, convallis non mauris. Fusce
-            imperdiet mauris nisl, vel bibendum felis ultrices in.
-          </p>
+          <div>
+            <h1 className="font-medium text-[2rem]">Tech Stack</h1>
+            <div className="grid grid-cols-5 gap-[10px]">
+              {skillList.map((item) => (
+                <div key={item.id} className="flex items-center gap-3 ">
+                  <Image src={item.src} width={40} height={40} alt={item.alt} />
+                  <span>{item.title}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          {/* end content */}
         </div>
       </div>
     </section>

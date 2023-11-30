@@ -97,7 +97,13 @@ export const skillList = [
   {
     id: 13,
     title: "Google Ads",
-    src: "/ai.svg",
-    alt: "Illustrator",
+    src: "/googleAds.svg",
+    alt: "google ads",
+  },
+  {
+    id: 14,
+    title: "GitHub",
+    src: "/github.svg",
+    alt: "github",
   },
 ];
