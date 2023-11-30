@@ -19,9 +19,12 @@ export default function Hero() {
     greeting = "Good Evening";
   }
   return (
-    <section className="relative heroSection w-full h-[100vh]">
+    <section className="relative heroSection w-full h-[100%] pt-[3rem]">
       <div className="styleSection items-center w-full h-full justify-start max-[600px]:flex-col max-[600px]:justify-center gap-12 max-[600px]:items-center">
-        <motion.div className="boxWrapper rounded-[54px]" variants={container}>
+        <motion.div
+          className="boxWrapper rounded-[54px] relative"
+          variants={container}
+        >
           <Image
             variants={item}
             className="rounded-[54px] max-[600px]:w-[200px]"
