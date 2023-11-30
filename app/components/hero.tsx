@@ -20,7 +20,7 @@ export default function Hero() {
   }
   return (
     <section className="relative heroSection w-full h-[100%] pt-[3rem]">
-      <div className="styleSection items-center w-full h-full justify-start max-[600px]:flex-col max-[600px]:justify-center gap-12 max-[600px]:items-center">
+      <div className="styleSection max-[600px]:py-[4rem] py-[7rem] items-center w-full h-full justify-start max-[600px]:flex-col max-[600px]:justify-center gap-12 max-[600px]:items-center">
         <motion.div
           className="boxWrapper p-1 rounded-[54px] relative"
           variants={container}

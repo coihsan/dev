@@ -49,10 +49,10 @@ body {
 }
 @layer utilities {
   .headingStyle {
-    @apply text-[2.7rem] font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#F0F0F0] to-[#616161];
+    @apply text-[2.7rem] max-[600px]:text-[1.9rem] font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#F0F0F0] to-[#616161];
   }
   .styleSection {
-    @apply flex gap-3 max-w-screen-lg max-[600px]:px-[1rem] max-[600px]:py-[4rem] py-[7rem] w-full mx-auto;
+    @apply flex gap-3 max-w-screen-lg max-[600px]:px-[1rem]  w-full mx-auto;
   }
   .boxWrapper {
     @apply bg-gradient-to-r from-[#E3E3E3] to-[#3D3D3D];
@@ -61,6 +61,6 @@ body {
     @apply bg-[#141414] flex items-center gap-2;
   }
   .sideLine {
-    @apply before:flex before:content-[''] before:absolute before:bg-gradient-to-b before:from-transparent before:via-neutral-300 before:to-transparent before:w-[3px] before:h-full before:top-[30px] before:left-[18px];
+    @apply before:flex before:content-[''] before:absolute before:bg-gradient-to-b before:from-transparent before:via-neutral-300 before:to-transparent before:w-[3px] before:h-[100%] before:top-[30px] before:left-[18px] before:max-[600px]:left-[14px];
   }
 }
