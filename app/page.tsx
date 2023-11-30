@@ -6,13 +6,11 @@ import Projects from "./components/projects";
 
 export default function Home() {
   return (
-    <main className="">
+    <main>
       <Header />
       <Hero />
-      <div>
-        <Experties />
-        <Projects />
-      </div>
+      <Experties />
+      <Projects />
     </main>
   );
 }

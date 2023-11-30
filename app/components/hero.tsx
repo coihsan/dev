@@ -20,19 +20,19 @@ export default function Hero() {
   }
   return (
     <section className="relative heroSection w-full h-[100vh]">
-      <div className="styleSection w-full h-full justify-start max-[600px]:flex-col max-[600px]:justify-center gap-6 max-[600px]:items-center">
+      <div className="styleSection items-center w-full h-full justify-start max-[600px]:flex-col max-[600px]:justify-center gap-12 max-[600px]:items-center">
         <motion.div className="boxWrapper rounded-[54px]" variants={container}>
           <Image
             variants={item}
             className="rounded-[54px] max-[600px]:w-[200px]"
             src={"/avatar.jpeg"}
-            width={300}
-            height={300}
+            width={350}
+            height={350}
             alt="avatar"
           />
         </motion.div>
         <div className="flex flex-col gap-6">
-          <div className="max-[600px]:mx-auto w-max bg-gradient-to-r from-[#696969] to-[#525252] rounded-full p-px">
+          <div className="max-[600px]:mx-auto w-max  bg-gradient-to-r from-[#696969] to-[#525252] rounded-full p-px">
             <h3 className="w-max bg-gradient-to-r from-neutral-700 to-zinc-900 rounded-full px-4 py-1 font-medium">
               {greeting} 👋🏻
             </h3>
@@ -45,7 +45,7 @@ export default function Hero() {
               ˗ˏˋ Ihsan ˎˊ
             </h2>
           </div>
-          <div className="grid grid-cols-2 gap-3 max-[600px]:mx-auto w-full">
+          <div className="flex items-center gap-3 max-[600px]:mx-auto">
             {position.map((index) => (
               <div
                 key={index.id}
