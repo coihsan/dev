@@ -57,7 +57,7 @@ export const ProjectList = [
     nameOfProjects: "Bhadrika Cipta - Resume Web Page",
     categoryProject: "#template",
     codeProject: "Vite/ReactJS/TailwinCSS",
-    imageLink: "bhadrika/.webp",
+    imageLink: "bhadrika.webp",
     urlPreview: "https://coihsan.github.io/bhadrika-cipta-template/",
     urlDownload:
       "https://github.com/coihsan/bhadrika-cipta-template/archive/refs/heads/main.zip",

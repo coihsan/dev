@@ -8,7 +8,7 @@ export default function Experties() {
           <div className="flex items-center sideLine ">
             <Image
               className="align-baseline max-[600px]:w-[30px]"
-              src={"/developertv.svg"}
+              src={"/terminal.svg"}
               width={40}
               height={40}
               alt="icon terminal"
