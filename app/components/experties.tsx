@@ -10,12 +10,12 @@ export default function Experties() {
           height={40}
           alt="icon terminal"
         />
-        <div className="flex flex-col pl-[1rem]">
-          <h1 className="headingStyle">Experties</h1>
-          <p className="textGray">
+        <div className="flex flex-col pl-[1rem] bg-rose-900">
+          <span className="headingStyle align-base">Experties</span>
+          <span className="textGray">
             I can handle jobs like a Digital Marketing, Build a Web, and Graphic
             Design in the marketing department with a team or individually.
-          </p>
+          </span>
         </div>
       </div>
     </section>
