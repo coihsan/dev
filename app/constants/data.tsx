@@ -42,7 +42,7 @@ export const skillList = [
   },
   {
     id: 5,
-    title: "Tailwind CSS",
+    title: "Tailwind",
     src: "/tailwindCSS.svg",
     alt: "tailwindCSS",
   },

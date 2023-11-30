@@ -22,7 +22,7 @@ export default function Hero() {
     <section className="relative heroSection w-full h-[100%] pt-[3rem]">
       <div className="styleSection items-center w-full h-full justify-start max-[600px]:flex-col max-[600px]:justify-center gap-12 max-[600px]:items-center">
         <motion.div
-          className="boxWrapper rounded-[54px] relative"
+          className="boxWrapper p-1 rounded-[54px] relative"
           variants={container}
         >
           <Image

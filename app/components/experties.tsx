@@ -20,13 +20,24 @@ export default function Experties() {
             I can handle jobs like a Digital Marketing, Build a Web, and Graphic
             Design in the marketing department with a team or individually.
           </span>
-          <div>
-            <h1 className="font-medium text-[2rem]">Tech Stack</h1>
-            <div className="grid grid-cols-5 gap-[10px]">
+          <div className="pt-[2rem]">
+            <h1 className="font-medium text-[1.5rem] pb-[1rem]">Tech Stack</h1>
+            <div className="grid grid-cols-5 gap-[10px] max-[600px]:grid-cols-2 w-full">
               {skillList.map((item) => (
-                <div key={item.id} className="flex items-center gap-3 ">
-                  <Image src={item.src} width={40} height={40} alt={item.alt} />
-                  <span>{item.title}</span>
+                <div className="boxWrapper p-[1px] min-h-[70px] rounded-lg">
+                  <div
+                    key={item.id}
+                    className="flex items-center justify-start gap-2 p-4 min-h-[70px] max-[600px]:flex-col rounded-lg bg-[#141414]"
+                  >
+                    <Image
+                      className="max-w-[40px] max-[600px]:max-w-[25px] max-[600px]:max-h-[25px] max-h-[40px]"
+                      src={item.src}
+                      width={40}
+                      height={40}
+                      alt={item.alt}
+                    />
+                    <span className="leading-none">{item.title}</span>
+                  </div>
                 </div>
               ))}
             </div>

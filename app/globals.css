@@ -52,10 +52,10 @@ body {
     @apply text-[2.7rem] font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#F0F0F0] to-[#616161];
   }
   .styleSection {
-    @apply flex gap-3 max-w-screen-lg max-[600px]:px-[2rem] max-[600px]:py-[4rem] py-[7rem] w-full mx-auto;
+    @apply flex gap-3 max-w-screen-lg max-[600px]:px-[1rem] max-[600px]:py-[4rem] py-[7rem] w-full mx-auto;
   }
   .boxWrapper {
-    @apply bg-gradient-to-r from-[#E3E3E3] to-[#3D3D3D] p-1;
+    @apply bg-gradient-to-r from-[#E3E3E3] to-[#3D3D3D];
   }
   .boxContain {
     @apply bg-[#141414] flex items-center gap-2;
