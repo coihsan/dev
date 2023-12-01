@@ -28,10 +28,10 @@ export default function Experties() {
               </h1>
               <div className="grid grid-cols-5 gap-[10px] max-[600px]:grid-cols-2 w-full">
                 {skillList.map((item) => (
-                  <div className="boxWrapper p-px  rounded-[20px] overflow-hidden transition-colors duration-500 ease-linear">
+                  <div className="boxWrapper p-px group rounded-[20px] overflow-hidden transition-colors duration-500 ease-linear">
                     <div
                       key={item.id}
-                      className="flex items-center justify-start gap-2 p-4 max-w-[188px] h-[81px] max-[600px]:flex-col rounded-[20px] bg-[#141414]"
+                      className="flex items-center boxFill justify-start gap-2 p-4 max-[600px]:flex-col rounded-[20px] bg-[#141414]"
                     >
                       <Image
                         className="max-w-[40px] max-[600px]:max-w-[25px] max-[600px]:max-h-[25px] max-h-[40px]"
@@ -53,10 +53,10 @@ export default function Experties() {
               </h1>
               <div className="flex items-center flex-wrap gap-[10px] w-full">
                 {commonjob.map((items) => (
-                  <div className="boxWrapper p-px rounded-full">
+                  <div className="boxWrapper group p-px rounded-full">
                     <div
                       key={items.id}
-                      className="flex items-center justify-start gap-2 px-4 py-2 rounded-full bg-[#141414]"
+                      className="flex items-center boxFill justify-start gap-2 px-4 py-2 rounded-full bg-[#141414]"
                     >
                       <span className="leading-none">{items.title}</span>
                     </div>

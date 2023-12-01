@@ -25,9 +25,9 @@ export default function Projects() {
                   key={ProjectList.id}
                   className="boxWrapper rounded-[20px] p-px w-full"
                 >
-                  <div className="rounded-[20px] p-4 flex items-start gap-3 bg-[#121212] max-[600px]:flex-col w-full overflow-hidden">
+                  <div className="rounded-[20px] group p-4 flex flex-col items-start gap-3 boxFill bg-[#121212] w-full overflow-hidden">
                     <img
-                      className="rounded-[20px] max-w-[50%] max-[600px]:max-w-full object-contain h-full"
+                      className="rounded-[20px] max-w-full object-contain h-full"
                       src={ProjectList.imageLink}
                       alt="image"
                     />
@@ -46,16 +46,27 @@ export default function Projects() {
                       </p>
                       <div className="flex items-center gap-3">
                         <a
-                          className="text-[14px] relative flex after:absolute after:content-[url('/arrow-right.svg')] after:right-[10px] pl-3 pr-8 py-1 rounded-full hover:bg-[#474747] bg-[#262626] transition-color ease-in-out duration-500"
+                          className="gap-2 flex px-4 py-1 rounded-full hover:bg-[#474747] bg-[#262626] transition-color ease-in-out duration-500"
                           href="#"
                         >
-                          Live Preview
-                        </a>
-                        <a href="#">
+                          <span className="text-[14px] ">Live Preview</span>
                           <Image
+                            src={"/arrow-right.svg"}
+                            width={18}
+                            height={18}
+                            alt="icon"
+                          />
+                        </a>
+                        <a
+                          href="#"
+                          className="gap-2 px-4 py-1 flex items-center rounded-full hover:bg-[#474747] bg-[#262626] transition-color ease-in-out duration-500"
+                        >
+                          <span className="text-[14px]">Download ZIP</span>
+                          <Image
+                            className=""
                             src={"/download.svg"}
-                            width={22}
-                            height={22}
+                            width={18}
+                            height={18}
                             alt="github"
                           />
                         </a>
