@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ProjectList } from "../constants/indexProjects";
 export default function Projects() {
   return (
-    <section className="relative bg-[url('/shades.svg')] bg-[center_top_-4rem] bg-contain bg-no-repeat w-full">
+    <section className="relative  w-full">
       <div className="styleSection ">
         <div className="flex flex-col relative">
           <div className="flex items-center sideLine ">
@@ -25,7 +25,7 @@ export default function Projects() {
                   key={ProjectList.id}
                   className="boxWrapper rounded-[20px] p-px w-full"
                 >
-                  <div className="rounded-[20px] group p-4 flex flex-col items-start gap-3 boxFill bg-[#121212] w-full overflow-hidden">
+                  <div className="rounded-[20px] group p-4 flex flex-col items-start gap-3 boxFill bg-[#1B1B1B] w-full overflow-hidden">
                     <img
                       className="rounded-[20px] max-w-full object-contain h-full"
                       src={ProjectList.imageLink}

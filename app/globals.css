@@ -72,7 +72,7 @@ body {
     @apply transition-all duration-150 ease-linear hover:shadow-md hover:shadow-neutral-50/90;
   }
   .boxWrapper {
-    @apply bg-gradient-to-br from-[#E3E3E3] via-[#3D3D3D] to-[#3D3D3D] transition-all duration-150 ease-linear  group-hover:shadow-lg group-hover:shadow-neutral-50/50;
+    @apply bg-gradient-to-br from-[#E3E3E3] via-[#3D3D3D] to-[#3D3D3D] transition-all duration-150 ease-linear group-hover:shadow-lg group-hover:shadow-neutral-50/50;
   }
   .boxContain {
     @apply bg-[#141414] flex items-center gap-2;

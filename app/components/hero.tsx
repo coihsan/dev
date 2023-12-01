@@ -11,9 +11,9 @@ export default function Hero() {
   const times = new Date().getHours();
   var greeting;
 
-  if (times >= 3 && times < 12) {
+  if (!times >= 3 && !times < 12) {
     greeting = "Good Morning";
-  } else if (times >= 12 && times < 17) {
+  } else if (!times >= 12 && times < 17) {
     greeting = "Good Afternoon";
   } else {
     greeting = "Good Evening";
@@ -36,9 +36,9 @@ export default function Hero() {
         </motion.div>
         <div className="flex flex-col gap-3">
           <div className="max-[600px]:mx-auto w-max  bg-gradient-to-r from-[#696969] to-[#525252] rounded-full p-px">
-            <h3 className="w-max bg-gradient-to-r from-neutral-700 to-zinc-900 rounded-full px-4 py-1 font-medium">
+            <span className="w-max bg-gradient-to-r from-neutral-700 to-zinc-900 rounded-full px-4 py-1 font-medium">
               {greeting} 👋🏻
-            </h3>
+            </span>
           </div>
           <div>
             <h2

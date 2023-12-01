@@ -31,7 +31,7 @@ export default function Experties() {
                   <div className="boxWrapper p-px group rounded-[20px] overflow-hidden transition-colors duration-500 ease-linear">
                     <div
                       key={item.id}
-                      className="flex items-center boxFill justify-start gap-2 p-4 max-[600px]:flex-col rounded-[20px] bg-[#141414]"
+                      className="flex items-center boxFill justify-start gap-2 p-4 h-[81px] max-[600px]:flex-col rounded-[20px] bg-[#1B1B1B]"
                     >
                       <Image
                         className="max-w-[40px] max-[600px]:max-w-[25px] max-[600px]:max-h-[25px] max-h-[40px]"
@@ -56,7 +56,7 @@ export default function Experties() {
                   <div className="boxWrapper group p-px rounded-full">
                     <div
                       key={items.id}
-                      className="flex items-center boxFill justify-start gap-2 px-4 py-2 rounded-full bg-[#141414]"
+                      className="flex items-center boxFill justify-start gap-2 px-4 py-2 rounded-full bg-[#1B1B1B]"
                     >
                       <span className="leading-none">{items.title}</span>
                     </div>

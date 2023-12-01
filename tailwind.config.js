@@ -15,6 +15,7 @@ module.exports = {
       gradientColorStopPositions: {
         33: "33%",
       },
+      backgroundSize:{}
     },
   },
   plugins: [],

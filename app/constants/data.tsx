@@ -120,7 +120,7 @@ export const commonjob = [
   { id: 8, title: "Google Search Console" },
   { id: 9, title: "Event Marketing" },
   { id: 10, title: "Google My Business" },
-  { id: 11, title: "Photgraph" },
+  { id: 11, title: "Photography" },
   { id: 12, title: "Google Search Console" },
   { id: 13, title: " Marketplace / E-Commerce" },
   { id: 14, title: " Meta Ads" },
