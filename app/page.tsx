@@ -13,10 +13,10 @@ export default function Home() {
       <Hero />
       <Experties />
       <Projects />
-      <Resume />
-      <div className="bg-[url('/circlelight.svg')] w-full h-full bg-top bg-contain bg-no-repeat">
-        <Contact />
+      <div className="z-[-2]">
+        <Resume />
       </div>
+      <Contact />
     </main>
   );
 }
