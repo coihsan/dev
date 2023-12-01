@@ -18,16 +18,16 @@ export default function Projects() {
             </h3>
           </div>
 
-          <div className="pl-[3.7rem] max-[600px]:pl-[3.1rem]">
-            <div className="pt-[2rem] grid grid-cols-2 gap-[10px] max-[600px]:grid-cols-1">
+          <div className="pl-[3.7rem] max-[600px]:pl-[3.1rem] w-full">
+            <div className="pt-[2rem] grid grid-cols-2 gap-3 max-[600px]:grid-cols-1 w-full">
               {ProjectList.map((ProjectList) => (
                 <div
                   key={ProjectList.id}
-                  className="boxWrapper rounded-[20px] p-[1px]"
+                  className="boxWrapper rounded-[20px] p-px w-full"
                 >
-                  <div className="rounded-[20px] p-3 flex items-start gap-3 bg-[#121212] max-[600px]:flex-col w-full overflow-hidden">
+                  <div className="rounded-[20px] p-4 flex items-start gap-3 bg-[#121212] max-[600px]:flex-col w-full overflow-hidden">
                     <img
-                      className="rounded-[20px] max-w-[250px] max-[600px]:w-[full] object-contain h-full"
+                      className="rounded-[20px] max-w-[50%] max-[600px]:max-w-full object-contain h-full"
                       src={ProjectList.imageLink}
                       alt="image"
                     />

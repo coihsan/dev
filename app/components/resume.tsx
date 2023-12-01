@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { ResumeData } from "../constants/data";
-export default function Resume() {
+export default function Experties() {
   return (
-    <section className="relative bg-[url('/shades.svg')] bg-[center_top_-4rem] bg-contain bg-no-repeat w-full max-[600px]:py-[4rem] py-[7rem]">
+    <section className="relative bg-[url('/grid.svg')] max-[600px]:bg-[center_top_2rem] max-[600px]:bg-[length:795px_400px] bg-contain bg-no-repeat bg-center w-full max-[600px]:py-[4rem] py-[7rem]">
       <div className="styleSection ">
         <div className="flex flex-col relative">
           <div className="flex items-center sideLine ">
@@ -13,17 +13,30 @@ export default function Resume() {
               height={40}
               alt="icon terminal"
             />
-            <h3 className="headingStyle align-baseline pl-[1rem]">
-              My Journey
-            </h3>
+            <h3 className="headingStyle align-baseline pl-[1rem]">Resume</h3>
+          </div>
 
+          <div className="pl-[3.7rem] max-[600px]:pl-[3.1rem]">
             {/* start content */}
-            <div>
-              {ResumeData.map((list) => (
-                <div>
-                  <span>{list.year}</span>
-                  <h2>{list.company}</h2>
-                  <p>{list.position}</p>
+            <div className="pt-[2rem] grid grid-cols-2 gap-3 max-[600px]:grid-cols-1 max-w-full">
+              {ResumeData.map((history) => (
+                <div className="boxWrapper p-px rounded-[20px]">
+                  <div className="flex items-center px-8 py-4 bg-[#141414] rounded-[20px] max-w-full">
+                    <Image
+                      className="fill-white"
+                      src={history.src}
+                      width={22}
+                      height={22}
+                      alt="icon"
+                    />
+                    <div className="flex flex-col gap-2 pl-[1.5rem] w-full">
+                      <span>{history.year}</span>
+                      <h3 className="text-[1.3rem] font-bold leading-none">
+                        {history.position}
+                      </h3>
+                      <p className="">{history.company}</p>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
