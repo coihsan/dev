@@ -47,6 +47,20 @@ body {
   background-image: url(/light.svg);
   z-index: -1;
 }
+.contactSection:before {
+  position: absolute;
+  display: block;
+  content: "";
+  bottom: 10px;
+  transform: translateY(40%);
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/circlelight.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
 @layer utilities {
   .headingStyle {
     @apply text-[2.7rem] max-[600px]:text-[1.9rem] font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#F0F0F0] to-[#616161];
@@ -62,5 +76,8 @@ body {
   }
   .sideLine {
     @apply before:flex before:content-[''] before:absolute before:bg-gradient-to-b before:from-transparent before:via-neutral-300 before:to-transparent before:w-[3px] before:h-[100%] before:top-[30px] before:left-[18px] before:max-[600px]:left-[14px];
+  }
+  .separator {
+    @apply relative w-full h-[2px] bg-gradient-to-l from-transparent via-neutral-700 to-transparent my-[4rem] before:absolute before:w-full before:h-[2px] before:bg-gradient-to-l before:from-transparent before:via-neutral-600 before:to-transparent before:z-[-2] before:blur-sm;
   }
 }

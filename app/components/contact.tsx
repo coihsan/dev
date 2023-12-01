@@ -3,9 +3,9 @@ import CopyButton from "../UI/CopyButton";
 
 export default function Contact() {
   return (
-    <section className="relative bg-[url('/circlelight.svg')] bg-contain max-[600px]:bg-cover bg-no-repeat bg-top w-[100vw]  max-[600px]:py-[4rem] py-[7rem]">
-      <div className="max-w-[667px] mx-auto flex flex-col items-center gap-8 max-[600px]:px-[1rem] pt-[4rem]">
-        <h1 className="text-center text-[2.3rem] max-[600px]:text-[1.5rem] leading-tight font-bold">
+    <section className="relative  before:-z-10 py-[7rem]">
+      <div className="max-w-[667px] mx-auto flex flex-col items-center gap-8  pt-[9rem] max-[600px]:pt-[1rem]">
+        <h1 className="text-center text-[2.2rem] max-[600px]:text-[1.5rem] leading-tight font-medium">
           If my profile aligns with your organizational objectives, I am excited
           about the opportunity to join your team and make a positive impact.
         </h1>

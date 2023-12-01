@@ -20,21 +20,21 @@ export default function Hero() {
   }
   return (
     <section className="relative heroSection w-full h-[100%] pt-[3rem]">
-      <div className="styleSection max-[600px]:py-[4rem] py-[7rem] items-center w-full h-full justify-start max-[600px]:flex-col max-[600px]:justify-center gap-12 max-[600px]:items-center">
+      <div className="styleSection max-[600px]:py-[4rem] py-[7rem] items-center justify-start max-[600px]:flex-col max-[600px]:justify-center max-[600px]:items-center">
         <motion.div
-          className="boxWrapper p-1 rounded-[54px] relative"
+          className="bg-gradient-to-br from-[#E3E3E3] via-[#3D3D3D] to-[#3D3D3D] p-1 rounded-[54px] relative"
           variants={container}
         >
           <Image
             variants={item}
-            className="rounded-[54px] max-[600px]:w-[200px]"
+            className="rounded-[54px] max-[600px]:w-[200px] backdrop-grayscale"
             src={"/avatar.jpeg"}
             width={350}
             height={350}
             alt="avatar"
           />
         </motion.div>
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-3">
           <div className="max-[600px]:mx-auto w-max  bg-gradient-to-r from-[#696969] to-[#525252] rounded-full p-px">
             <h3 className="w-max bg-gradient-to-r from-neutral-700 to-zinc-900 rounded-full px-4 py-1 font-medium">
               {greeting} 👋🏻
@@ -42,7 +42,7 @@ export default function Hero() {
           </div>
           <div>
             <h2
-              className="text-7xl max-[600px]:text-6xl font-bold max-[600px]:text-center"
+              className="text-7xl max-[600px]:text-6xl py-[2rem] font-bold max-[600px]:text-center"
               variants={item}
             >
               ˗ˏˋ Ihsan ˎˊ
@@ -52,7 +52,7 @@ export default function Hero() {
             {position.map((index) => (
               <div
                 key={index.id}
-                className="w-max flex items-center gap-2 bg-[#262626] rounded-full px-6 py-2 max-[600px]:px-4 font-medium"
+                className="flex items-center gap-2 font-medium"
               >
                 <svg
                   className="rotate-[45deg] fill-white"

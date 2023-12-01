@@ -2,8 +2,8 @@ import Image from "next/image";
 import { ResumeData } from "../constants/data";
 export default function Experties() {
   return (
-    <section className="relative bg-[url('/grid.svg')] max-[600px]:bg-[center_top_2rem] max-[600px]:bg-[length:795px_400px] bg-contain bg-no-repeat bg-center w-full max-[600px]:py-[4rem] py-[7rem]">
-      <div className="styleSection ">
+    <section className="relative bg-[url('/grid.svg')] max-[600px]:bg-[center_top_2rem] max-[600px]:bg-[length:795px_400px] bg-contain bg-no-repeat bg-center w-full">
+      <div className="styleSection">
         <div className="flex flex-col relative">
           <div className="flex items-center sideLine ">
             <Image

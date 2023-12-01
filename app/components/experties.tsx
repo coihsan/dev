@@ -2,7 +2,7 @@ import Image from "next/image";
 import { skillList, commonjob } from "../constants/data";
 export default function Experties() {
   return (
-    <section className="relative bg-[url('/grid.svg')] max-[600px]:bg-[center_top_2rem] max-[600px]:bg-[length:795px_400px] bg-contain bg-no-repeat bg-center w-full max-[600px]:py-[4rem] py-[7rem]">
+    <section className="relative bg-[url('/grid.svg')] max-[600px]:bg-[center_top_2rem] max-[600px]:bg-[length:795px_400px] bg-contain bg-no-repeat bg-center w-full max-[600px]:py-[4rem]">
       <div className="styleSection ">
         <div className="flex flex-col relative">
           <div className="flex items-center sideLine ">
@@ -47,8 +47,7 @@ export default function Experties() {
               </div>
             </div>
             {/* end */}
-            <div className="relative w-full h-[2px] bg-gradient-to-l from-transparent via-neutral-700 to-transparent my-[3rem] before:absolute before:w-full before:h-[2px] before:bg-gradient-to-l before:from-transparent before:via-neutral-600 before:to-transparent before:z-[-2] before:blur-sm"></div>
-            <div className="">
+            <div className="pt-[2rem]">
               <h1 className="font-medium text-[1.5rem] pb-[1rem]">
                 Skills & Platform
               </h1>
