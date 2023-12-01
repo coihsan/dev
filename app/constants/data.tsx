@@ -125,3 +125,54 @@ export const commonjob = [
   { id: 13, title: " Marketplace / E-Commerce" },
   { id: 14, title: " Meta Ads" },
 ];
+
+export const ResumeData = [
+  {
+    id: 0,
+    company: "PT. Anang Jhonny",
+    year: "Current job",
+    position: "Digital Marketing",
+  },
+  {
+    id: 1,
+    company: "Huang Jia Restaurant",
+    year: "Mar 2021 - Mar 2022",
+    position: "Design & Digtal Marketing",
+  },
+  {
+    id: 2,
+    company: "PT Aha Store",
+    year: "Jul - Oct 2020",
+    position: "Design & Marketplace",
+  },
+  {
+    id: 3,
+    company: "Flight Store",
+    year: "Jun - Oct 2019",
+    position: "Design & Digtal Marketing",
+  },
+  {
+    id: 4,
+    company: "PT Juwita Collection",
+    year: "Jan - Mar 2019",
+    position: "Digital Marketing",
+  },
+  {
+    id: 5,
+    company: "PT Bossco Indolestari",
+    year: "Sept 2017 - Jun 2018",
+    position: "Marketing Coordinator",
+  },
+  {
+    id: 6,
+    company: "PT. Netciti Persada",
+    year: "Jan 2016 - Apr 2017",
+    position: "Graphic Designer",
+  },
+  {
+    id: 7,
+    company: "Bina Sarana Informatika",
+    year: "2012 - 2015",
+    position: "D3 Broadcasting Communication",
+  },
+];

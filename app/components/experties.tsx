@@ -28,10 +28,10 @@ export default function Experties() {
               </h1>
               <div className="grid grid-cols-5 gap-[10px] max-[600px]:grid-cols-2 w-full">
                 {skillList.map((item) => (
-                  <div className="boxWrapper p-[1px] h-[70px] rounded-lg">
+                  <div className="boxWrapper p-[1px] max-w-[188px] h-[81px] rounded-[20px]">
                     <div
                       key={item.id}
-                      className="flex items-center justify-start gap-2 p-4 h-[70px] max-[600px]:flex-col rounded-lg bg-[#141414]"
+                      className="flex items-center justify-start gap-2 p-4 max-w-[188px] h-[81px] max-[600px]:flex-col rounded-[20px] bg-[#141414]"
                     >
                       <Image
                         className="max-w-[40px] max-[600px]:max-w-[25px] max-[600px]:max-h-[25px] max-h-[40px]"

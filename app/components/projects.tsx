@@ -23,11 +23,11 @@ export default function Projects() {
               {ProjectList.map((ProjectList) => (
                 <div
                   key={ProjectList.id}
-                  className="boxWrapper rounded-lg p-[1px]"
+                  className="boxWrapper rounded-[20px] p-[1px]"
                 >
-                  <div className="rounded-lg p-3 flex items-start gap-3 bg-[#121212] max-[600px]:flex-col w-full overflow-hidden">
+                  <div className="rounded-[20px] p-3 flex items-start gap-3 bg-[#121212] max-[600px]:flex-col w-full overflow-hidden">
                     <img
-                      className="rounded-lg max-w-[250px] max-[600px]:w-[full] object-contain h-full"
+                      className="rounded-[20px] max-w-[250px] max-[600px]:w-[full] object-contain h-full"
                       src={ProjectList.imageLink}
                       alt="image"
                     />
@@ -35,12 +35,18 @@ export default function Projects() {
                       <h2 className="text-[1rem] font-bold">
                         {ProjectList.nameOfProjects}
                       </h2>
-                      <span className="text-[14px]">
-                        {ProjectList.codeProject}
-                      </span>
+                      <p className="text-[14px] flex items-center gap-2">
+                        <Image
+                          src={"/developer_guide.svg"}
+                          width={18}
+                          height={18}
+                          alt="developer guide"
+                        />
+                        <span>{ProjectList.codeProject}</span>
+                      </p>
                       <div className="flex items-center gap-3">
                         <a
-                          className="text-[14px] px-3 py-1 rounded-full hover:bg-[#474747] bg-[#262626] transition-color ease-in-out duration-500"
+                          className="text-[14px] relative flex after:absolute after:content-[url('/arrow-right.svg')] after:right-[10px] pl-3 pr-8 py-1 rounded-full hover:bg-[#474747] bg-[#262626] transition-color ease-in-out duration-500"
                           href="#"
                         >
                           Live Preview

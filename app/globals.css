@@ -55,7 +55,7 @@ body {
     @apply flex gap-3 max-w-screen-lg max-[600px]:px-[1rem]  w-full mx-auto;
   }
   .boxWrapper {
-    @apply bg-gradient-conic from-[#E3E3E3] to-[#3D3D3D];
+    @apply bg-gradient-to-br from-[#E3E3E3] via-[#3D3D3D] to-[#3D3D3D];
   }
   .boxContain {
     @apply bg-[#141414] flex items-center gap-2;

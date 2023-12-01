@@ -3,7 +3,7 @@ export const ProjectList = [
     id: 0,
     nameOfProjects: "ZincStudio - Template Landing Page",
     categoryProject: "#template",
-    codeProject: "NextJS/React/Tailwind CSS",
+    codeProject: "NextJS/Tailwind CSS",
     imageLink: "/zinc.webp",
     urlPreview: "https://zinc-starter.vercel.app/",
     urlDownload:
@@ -13,7 +13,7 @@ export const ProjectList = [
     id: 1,
     nameOfProjects: "berrynet starter template",
     categoryProject: "#template",
-    codeProject: "NextJS/React/Tailwind CSS",
+    codeProject: "NextJS/Tailwind CSS",
     imageLink: "/berrynet.webp",
     urlPreview: "https://berrynet-starter.vercel.app/",
     urlDownload:
@@ -24,7 +24,7 @@ export const ProjectList = [
     id: 2,
     nameOfProjects: "Jhon Doe Portofolio + Blog Page",
     categoryProject: "#template",
-    codeProject: "Vite/React/Pure CSS",
+    codeProject: "Vite/Pure CSS",
     imageLink: "/jhondoe.webp",
     urlPreview: "https://coihsan.github.io/jhon-doe-template-pure-html/",
     urlDownload:
@@ -56,7 +56,7 @@ export const ProjectList = [
     id: 5,
     nameOfProjects: "Bhadrika Cipta - Resume Web Page",
     categoryProject: "#template",
-    codeProject: "Vite/ReactJS/TailwinCSS",
+    codeProject: "Vite/TailwinCSS",
     imageLink: "bhadrika.webp",
     urlPreview: "https://coihsan.github.io/bhadrika-cipta-template/",
     urlDownload:
