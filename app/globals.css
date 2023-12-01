@@ -52,27 +52,30 @@ body {
   display: block;
   content: "";
   bottom: 10px;
-  transform: translateY(40%);
+  transform: translateY(0%);
   left: 0;
   width: 100%;
   height: 100%;
   background-image: url(/circlelight.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: bottom;
+}
+.card {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 @layer utilities {
   .headingStyle {
     @apply text-[2.7rem] max-[600px]:text-[1.9rem] font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#F0F0F0] to-[#616161];
   }
   .styleSection {
-    @apply flex gap-3 max-w-screen-lg max-[600px]:px-[1rem]  w-full mx-auto;
+    @apply flex gap-3 max-w-screen-lg px-[1rem]  w-full mx-auto;
   }
   .boxFill {
-    @apply transition-all duration-150 ease-linear hover:shadow-md hover:shadow-neutral-50/90;
+    @apply transition-shadow duration-300 ease-in hover:shadow-md hover:shadow-neutral-50/90;
   }
   .boxWrapper {
-    @apply bg-gradient-to-br from-[#E3E3E3] via-[#3D3D3D] to-[#3D3D3D] transition-all duration-150 ease-linear group-hover:shadow-lg group-hover:shadow-neutral-50/50;
+    @apply bg-gradient-to-br from-[#E3E3E3] via-[#3D3D3D] to-[#3D3D3D] transition-shadow duration-300 ease-in group-hover:shadow-lg group-hover:shadow-neutral-50/50;
   }
   .boxContain {
     @apply bg-[#141414] flex items-center gap-2;

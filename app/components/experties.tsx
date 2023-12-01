@@ -26,12 +26,12 @@ export default function Experties() {
               <h1 className="font-medium text-[1.5rem] pb-[1rem]">
                 Tech Stack
               </h1>
-              <div className="grid grid-cols-5 gap-[10px] max-[600px]:grid-cols-2 w-full">
+              <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2  max-[600px]:grid-cols-2 gap-[10px] w-full">
                 {skillList.map((item) => (
-                  <div className="boxWrapper p-px group rounded-[20px] overflow-hidden transition-colors duration-500 ease-linear">
+                  <div className="boxWrapper p-px group rounded-[20px] transition-colors duration-500 ease-linear">
                     <div
                       key={item.id}
-                      className="flex items-center boxFill justify-start gap-2 p-4 h-[81px] max-[600px]:flex-col rounded-[20px] bg-[#1B1B1B]"
+                      className="flex items-center boxFill justify-start gap-4 p-4  max-[600px]:flex-col rounded-[20px] bg-[#1B1B1B]"
                     >
                       <Image
                         className="max-w-[40px] max-[600px]:max-w-[25px] max-[600px]:max-h-[25px] max-h-[40px]"

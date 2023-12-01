@@ -20,11 +20,8 @@ export default function Hero() {
   }
   return (
     <section className="relative heroSection w-full h-[100%] pt-[3rem]">
-      <div className="styleSection max-[600px]:py-[4rem] py-[7rem] items-center justify-start max-[600px]:flex-col max-[600px]:justify-center max-[600px]:items-center">
-        <motion.div
-          className="bg-gradient-to-br from-[#E3E3E3] via-[#3D3D3D] to-[#3D3D3D] p-1 rounded-[54px] relative"
-          variants={container}
-        >
+      <div className="styleSection max-[600px]:py-[4rem] py-[7rem] flex items-center justify-start max-[600px]:flex-col max-[600px]:justify-center max-[600px]:items-center">
+        <motion.div className="rounded-[54px] relative" variants={container}>
           <Image
             variants={item}
             className="rounded-[54px] max-[600px]:w-[200px] backdrop-grayscale"
@@ -34,12 +31,10 @@ export default function Hero() {
             alt="avatar"
           />
         </motion.div>
-        <div className="flex flex-col gap-3">
-          <div className="max-[600px]:mx-auto w-max  bg-gradient-to-r from-[#696969] to-[#525252] rounded-full p-px">
-            <span className="w-max bg-gradient-to-r from-neutral-700 to-zinc-900 rounded-full px-4 py-1 font-medium">
-              {greeting} 👋🏻
-            </span>
-          </div>
+        <div className="pl-[3rem] flex flex-col gap-3 max-[600px]:pl-[0rem] ">
+          <span className="max-[600px]:mx-auto w-max bg-neutral-800 rounded-full px-4 py-1 font-medium">
+            {greeting} 👋🏻
+          </span>
           <div>
             <h2
               className="text-7xl max-[600px]:text-6xl py-[2rem] font-bold max-[600px]:text-center"

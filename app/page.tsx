@@ -15,7 +15,7 @@ export default function Home() {
       <div className="separator"></div>
       <Projects />
       <div className="separator"></div>
-      <div className="relative contactSection max-[600px]:before:bg-contain max-[600px]:before:translate-y-[-12%]  w-full h-full">
+      <div className="overflow-y-hidden relative contactSection max-[600px]:bg-top  w-full h-full">
         <Resume />
         <Contact />
       </div>
