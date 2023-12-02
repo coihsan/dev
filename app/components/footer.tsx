@@ -6,13 +6,17 @@ export default function Footer() {
     <footer className="styleSection mx-auto flex flex-col items-center">
       <div className="flex items-center gap-3">
         {IconList.map((icon) => (
-          <Link key={icon.id} href={icon.url}>
-            <div className="w-[32px] h-[32px]">{icon.svg}</div>
-            <span className="hidden">{icon.title}</span>
+          <Link className="relative" key={icon.id} href={icon.url}>
+            <div className="group w-[32px] h-[32px]">{icon.svg}</div>
+            <span className="hidden opacity-00 absolute top-0 bg-neutral-50 p-4 text-neutral-900 group-hover:block group-hover:opacity-1">
+              {icon.title}
+            </span>
           </Link>
         ))}
       </div>
-      <p>Developed by coihsan</p>
+      <p>
+        Developed by <strong>coihsan</strong>
+      </p>
     </footer>
   );
 }
