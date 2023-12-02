@@ -2,7 +2,7 @@ import Image from "next/image";
 import { skillList, commonjob } from "../constants/data";
 export default function Experties() {
   return (
-    <section className="relative bg-[url('/grid.svg')] max-[600px]:bg-[center_top_2rem] max-[600px]:bg-[length:795px_400px] bg-contain bg-no-repeat bg-center w-full max-[600px]:py-[4rem]">
+    <section className="relative  max-[600px]:py-[4rem]">
       <div className="styleSection ">
         <div className="flex flex-col relative">
           <div className="flex items-center sideLine ">
@@ -28,11 +28,11 @@ export default function Experties() {
               </h1>
               <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2  max-[600px]:grid-cols-2 gap-[10px] w-full">
                 {skillList.map((item) => (
-                  <div className="boxWrapper p-px group rounded-[20px] transition-colors duration-500 ease-linear">
-                    <div
-                      key={item.id}
-                      className="flex items-center boxFill justify-start gap-4 p-4  max-[600px]:flex-col rounded-[20px] bg-[#1B1B1B]"
-                    >
+                  <div
+                    key={item.id}
+                    className="boxWrapper p-px group rounded-[20px] transition-colors duration-500 ease-linear"
+                  >
+                    <div className="flex items-center boxFill justify-start gap-4 p-4  max-[600px]:flex-col rounded-[20px] bg-[#1B1B1B]">
                       <Image
                         className="max-w-[40px] max-[600px]:max-w-[25px] max-[600px]:max-h-[25px] max-h-[40px]"
                         src={item.src}
@@ -53,11 +53,11 @@ export default function Experties() {
               </h1>
               <div className="flex items-center flex-wrap gap-[10px] w-full">
                 {commonjob.map((items) => (
-                  <div className="boxWrapper group p-px rounded-full">
-                    <div
-                      key={items.id}
-                      className="flex items-center boxFill justify-start gap-2 px-4 py-2 rounded-full bg-[#1B1B1B]"
-                    >
+                  <div
+                    key={items.id}
+                    className="boxWrapper group p-px rounded-full"
+                  >
+                    <div className="flex items-center boxFill justify-start gap-2 px-4 py-2 rounded-full bg-[#1B1B1B]">
                       <span className="leading-none">{items.title}</span>
                     </div>
                   </div>

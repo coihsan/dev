@@ -9,8 +9,10 @@ import Contact from "./components/contact";
 export default function Home() {
   return (
     <main>
-      <Header />
-      <Hero />
+      <div className="bg-[url('/grid.svg')] max-[600px]:bg-[center_top_2rem] max-[600px]:bg-[length:795px_400px] bg-contain bg-no-repeat bg-center w-full">
+        <Header />
+        <Hero />
+      </div>
       <Experties />
       <div className="separator"></div>
       <Projects />

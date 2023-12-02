@@ -25,7 +25,7 @@ export default function Projects() {
                   key={ProjectList.id}
                   className="boxWrapper rounded-[20px] p-px w-full"
                 >
-                  <div className="rounded-[20px] group p-4 flex flex-col items-start gap-3 boxFill bg-[#1B1B1B] w-full overflow-hidden">
+                  <div className="rounded-[20px] group p-4 flex flex-col items-start gap-3 boxFill bg-[#f0f0f0] w-full overflow-hidden">
                     <img
                       className="rounded-[20px] max-w-full object-contain h-full"
                       src={ProjectList.imageLink}
