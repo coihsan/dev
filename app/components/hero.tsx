@@ -119,7 +119,8 @@ export default function Hero() {
                   animate="visible"
                   transition={{ delay: 0.8, type: "spring", stiffness: 100 }}
                   className="hover:underline"
-                  href="#"
+                  target="_blank"
+                  href="https://skillshop.exceedlms.com/profiles/038b28dd54cb4f11bd4668684c05e95f"
                 >
                   Skillshop
                 </motion.a>
@@ -132,7 +133,8 @@ export default function Hero() {
                   animate="visible"
                   transition={{ delay: 0.9 }}
                   className="hover:underline"
-                  href=""
+                  target="_blank"
+                  href="https://scl.io/49LUWUx"
                 >
                   Accredible
                 </motion.a>
@@ -144,7 +146,7 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
             transition={{ delay: 1 }}
-            className="flex gap-3 max-[600px]:mx-auto"
+            className="flex gap-3 max-[600px]:mx-auto pt-[1rem]"
           >
             <CalltoAction />
             <CopyButton
