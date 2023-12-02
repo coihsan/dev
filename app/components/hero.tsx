@@ -7,10 +7,10 @@ import CopyButton from "../UI/CopyButton";
 import { motion } from "framer-motion";
 // import { container, item } from "../constants/animate";
 const container = {
-  hidden: { opacity: 1, scale: 0 },
+  hidden: { opacity: 0, y: 50 },
   visible: {
     opacity: 1,
-    scale: 1,
+    y: 0,
     transition: {
       delayChildren: 0.3,
       staggerChildren: 0.2,
@@ -19,9 +19,8 @@ const container = {
 };
 
 const item = {
-  hidden: { y: 20, opacity: 0 },
+  hidden: { opacity: 0 },
   visible: {
-    y: 0,
     opacity: 1,
   },
 };
@@ -59,6 +58,7 @@ export default function Hero() {
             variants={item}
             initial="hidden"
             animate="visible"
+            transition={{ delay: 0.3, duration: 2 }}
             className="max-[600px]:mx-auto w-max bg-neutral-800 rounded-full px-4 py-1 font-medium"
           >
             {greeting} 👋🏻
@@ -69,6 +69,7 @@ export default function Hero() {
               variants={item}
               initial="hidden"
               animate="visible"
+              transition={{ delay: 0.4, duration: 2 }}
             >
               ˗ˏˋ Ihsan ˎˊ
             </motion.h2>
@@ -77,6 +78,9 @@ export default function Hero() {
             {position.map((index) => (
               <motion.div
                 variants={item}
+                initial="hidden"
+                animate="visible"
+                transition={{ delay: 0.6 }}
                 key={index.id}
                 className="flex items-center gap-2 font-medium"
               >
@@ -93,7 +97,13 @@ export default function Hero() {
               </motion.div>
             ))}
           </div>
-          <div className="flex gap-3 items-center max-[600px]:mx-auto">
+          <motion.div
+            className="flex gap-3 items-center max-[600px]:mx-auto"
+            variants={item}
+            initial="hidden"
+            animate="visible"
+            transition={{ delay: 0.6 }}
+          >
             <p>Credentials :</p>
             <div className="flex gap-3 items-center">
               <div className="flex gap-3 items-center">
@@ -103,26 +113,46 @@ export default function Hero() {
                   height={40}
                   alt="skillshop"
                 />
-                <a className="hover:underline" href="#">
+                <motion.a
+                  variants={item}
+                  initial="hidden"
+                  animate="visible"
+                  transition={{ delay: 0.8, type: "spring", stiffness: 100 }}
+                  className="hover:underline"
+                  href="#"
+                >
                   Skillshop
-                </a>
+                </motion.a>
               </div>
               {"/"}
               <div>
-                <a className="hover:underline" href="">
+                <motion.a
+                  variants={item}
+                  initial="hidden"
+                  animate="visible"
+                  transition={{ delay: 0.9 }}
+                  className="hover:underline"
+                  href=""
+                >
                   Accredible
-                </a>
+                </motion.a>
               </div>
             </div>
-          </div>
-          <div className="flex gap-3 max-[600px]:mx-auto">
+          </motion.div>
+          <motion.div
+            variants={item}
+            initial="hidden"
+            animate="visible"
+            transition={{ delay: 1 }}
+            className="flex gap-3 max-[600px]:mx-auto"
+          >
             <CalltoAction />
             <CopyButton
               className="pl-[25px] w-[100%]"
               textButton="E-Mail"
               textCopy="co.ihsan@gmail.com"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
