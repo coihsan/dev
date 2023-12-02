@@ -3,7 +3,7 @@ export default function CalltoAction() {
     <div>
       <a
         className="flex items-center gap-3 bg-white px-4 py-2 w-max rounded-full text-[#141414]"
-        href="#"
+        href="https://t.me/contactihsan"
       >
         <svg
           fill="#141414"
