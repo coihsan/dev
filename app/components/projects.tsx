@@ -25,12 +25,14 @@ export default function Projects() {
                   key={ProjectList.id}
                   className="boxWrapper rounded-[20px] p-px w-full"
                 >
-                  <div className="rounded-[20px] group p-4 flex flex-col items-start gap-3 boxFill bg-[#f0f0f0] w-full overflow-hidden">
-                    <img
-                      className="rounded-[20px] max-w-full object-contain h-full"
-                      src={ProjectList.imageLink}
-                      alt="image"
-                    />
+                  <div className="rounded-[20px] group p-4 flex flex-col items-start gap-3 boxFill bg-[#141414] w-full overflow-hidden">
+                    <div className="group overflow-hidden rounded-[20px]">
+                      <img
+                        className="rounded-[20px] max-w-full object-contain h-full group-hover:scale-[1.1] transition-transform ease-in-out duration-300"
+                        src={ProjectList.imageLink}
+                        alt="image"
+                      />
+                    </div>
                     <div className="flex flex-col gap-3">
                       <h2 className="text-[1rem] font-bold">
                         {ProjectList.nameOfProjects}
@@ -44,7 +46,7 @@ export default function Projects() {
                         />
                         <span>{ProjectList.codeProject}</span>
                       </p>
-                      <div className="grid grid-cols-2 items-center justify-center gap-3 max-[780px]:grid max-[780px]:grid-rows-2 w-full">
+                      <div className="grid grid-cols-2 items-center justify-center gap-2 max-[780px]:grid  w-full">
                         <a
                           className="gap-2 flex px-4 py-1 rounded-full hover:bg-[#474747] bg-[#262626] transition-colors ease-in-out duration-500"
                           href={ProjectList.urlPreview}

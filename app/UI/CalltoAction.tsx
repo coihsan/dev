@@ -2,10 +2,11 @@ export default function CalltoAction() {
   return (
     <div>
       <a
-        className="flex items-center gap-3 bg-white px-4 py-2 w-max rounded-full text-black"
+        className="flex items-center gap-3 bg-white px-4 py-2 w-max rounded-full text-[#141414]"
         href="#"
       >
         <svg
+          fill="#141414"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"

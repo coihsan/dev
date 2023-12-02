@@ -95,13 +95,13 @@ export const skillList = [
     alt: "Illustrator",
   },
   {
-    id: 13,
+    id: 14,
     title: "Google Ads",
     src: "/googleAds.svg",
     alt: "google ads",
   },
   {
-    id: 14,
+    id: 15,
     title: "GitHub",
     src: "/github.svg",
     alt: "github",

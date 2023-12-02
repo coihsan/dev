@@ -9,16 +9,14 @@ import Contact from "./components/contact";
 export default function Home() {
   return (
     <main>
-      <div className="bg-[url('/grid.svg')] max-[600px]:bg-[center_top_2rem] max-[600px]:bg-[length:795px_400px] bg-contain bg-no-repeat bg-center w-full">
+      <div className="heroSection">
         <Header />
         <Hero />
       </div>
       <Experties />
       <div className="separator"></div>
       <Projects />
-      <div className="separator"></div>
-      <div className="overflow-y-hidden relative contactSection max-[600px]:bg-top  w-full h-full">
-        <Resume />
+      <div className="overflow-y-hidden relative contactSection max-[600px]:bg-top bg-fixed max-[780]:before:translate-y-[-55%] w-full h-full">
         <Contact />
       </div>
     </main>

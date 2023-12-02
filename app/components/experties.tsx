@@ -2,7 +2,7 @@ import Image from "next/image";
 import { skillList, commonjob } from "../constants/data";
 export default function Experties() {
   return (
-    <section className="relative  max-[600px]:py-[4rem]">
+    <section className="relative bg-[url('/grid.svg')] max-[600px]:bg-[center_top_2rem] max-[600px]:bg-[length:795px_400px] bg-contain bg-no-repeat bg-center w-full max-[600px]:py-[4rem]">
       <div className="styleSection ">
         <div className="flex flex-col relative">
           <div className="flex items-center sideLine ">
@@ -32,7 +32,7 @@ export default function Experties() {
                     key={item.id}
                     className="boxWrapper p-px group rounded-[20px] transition-colors duration-500 ease-linear"
                   >
-                    <div className="flex items-center boxFill justify-start gap-4 p-4  max-[600px]:flex-col rounded-[20px] bg-[#1B1B1B]">
+                    <div className="flex items-center boxFill justify-start gap-4 p-4 h-[81px] max-[600px]:flex-col rounded-[20px] bg-[#1B1B1B]">
                       <Image
                         className="max-w-[40px] max-[600px]:max-w-[25px] max-[600px]:max-h-[25px] max-h-[40px]"
                         src={item.src}

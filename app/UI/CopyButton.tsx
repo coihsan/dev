@@ -15,9 +15,9 @@ const CopyButton = ({ textButton, textCopy }) => {
 
   return (
     <button
-      className="flex w-max shadow-md gap-3 items-center justify-center px-4 py-2 rounded-full  bg-transparent border border-white hover:bg-neutral-50/20 focus:outline-none"
+      className="flex w-max shadow-md gap-3 items-center justify-center px-4 py-2 rounded-full  bg-transparent border border-white hover:bg-neutral-50/10 focus:outline-none"
       onClick={handleCopyClick}
-      style={{ color: isCopied ? "#a3a3a3" : "#171717" }}
+      style={{ color: isCopied ? "#a1a1aa" : "#171717" }}
     >
       <svg
         className="fill-white"
