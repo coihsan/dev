@@ -13,7 +13,7 @@ export default function Contact() {
         <div className="flex gap-3 max-[600px]:mx-auto">
           <CalltoAction />
           <CopyButton
-            className="pl-[25px] w-[100%]"
+            className={"pl-[25px] w-[100%]"}
             textButton="E-Mail"
             textCopy="co.ihsan@gmail.com"
           />

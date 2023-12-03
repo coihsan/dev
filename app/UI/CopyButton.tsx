@@ -1,7 +1,17 @@
 "use client";
 import React, { useState } from "react";
 
-const CopyButton = ({ textButton, textCopy }) => {
+interface CopyButtonProps {
+  textButton: string;
+  textCopy: string;
+  className?: string;
+}
+
+const CopyButton: React.FC<CopyButtonProps> = ({
+  textButton,
+  textCopy,
+  className,
+}) => {
   const [isCopied, setIsCopied] = useState(false);
 
   const handleCopyClick = () => {

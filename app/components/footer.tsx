@@ -1,4 +1,4 @@
-import { IconList } from "../constants/Icons.tsx";
+import { IconList } from "../constants/Icons";
 import Link from "next/link";
 import Image from "next/image";
 export default function Footer() {
