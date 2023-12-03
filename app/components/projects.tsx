@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ProjectList } from "../constants/indexProjects";
-import ReadMoreOverlay from "../UI/ReadMoreOverlay";
+// import ReadMoreOverlay from "../UI/ReadMoreOverlay";
 export default function Projects() {
   return (
     <section className="relative  w-full">
@@ -85,7 +85,7 @@ export default function Projects() {
           </div>
         </div>
       </div>
-      <ReadMoreOverlay />
+      {/* <ReadMoreOverlay /> */}
     </section>
   );
 }
