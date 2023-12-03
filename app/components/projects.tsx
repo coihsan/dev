@@ -26,7 +26,7 @@ export default function Projects() {
                   key={ProjectList.id}
                   className="boxWrapper rounded-[20px] p-px w-full"
                 >
-                  <div className="rounded-[20px] group p-4 flex flex-col items-start gap-3 boxFill bg-[#121212] w-full overflow-hidden">
+                  <div className="rounded-[20px] group p-4 flex flex-col items-start gap-3 bg-[#121212] transition-colors duration-300 ease-linear hover:bg-neutral-800  w-full overflow-hidden">
                     <div className="group overflow-hidden rounded-[20px]">
                       <Image
                         className="rounded-[20px] max-w-full object-contain h-full group-hover:scale-[1.1] transition-transform ease-in-out duration-300"
@@ -51,7 +51,7 @@ export default function Projects() {
                       </p>
                       <div className="flex items-center justify-start gap-2 w-full">
                         <a
-                          className="gap-2 flex px-4 py-1 rounded-full hover:bg-[#474747] bg-[#262626] transition-colors ease-in-out duration-500"
+                          className="gap-2 flex px-4 py-1 rounded-full group-hover:bg-neutral-950  bg-[#262626] transition-colors ease-in-out duration-500"
                           href={ProjectList.urlPreview}
                         >
                           <span className="">Live Preview</span>
@@ -64,7 +64,7 @@ export default function Projects() {
                         </a>
                         <a
                           href={ProjectList.urlDownload}
-                          className="gap-2 px-4 py-1 w-max flex items-center rounded-full hover:bg-[#474747] bg-[#262626] transition-colors ease-in-out duration-500"
+                          className="gap-2 px-4 py-1 w-max flex items-center rounded-full group-hover:bg-neutral-950 bg-[#262626] transition-colors ease-in-out duration-500"
                         >
                           <span className="text-[14px]">ZIP</span>
                           <Image

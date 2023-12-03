@@ -77,6 +77,9 @@ body {
   .boxWrapper {
     @apply bg-gradient-to-br from-[#E3E3E3] via-[#121212] to-[#121212] transition-shadow duration-300 ease-in group-hover:shadow-lg group-hover:shadow-neutral-50/50;
   }
+  .hoverShadow {
+    @apply;
+  }
   .boxContain {
     @apply bg-[#121212] flex items-center gap-2;
   }
