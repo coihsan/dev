@@ -66,7 +66,7 @@ body {
 }
 @layer utilities {
   .headingStyle {
-    @apply text-[2.7rem] max-[600px]:text-[1.9rem] font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#F0F0F0] to-[#616161];
+    @apply text-[2.7rem] max-[600px]:text-[1.9rem] font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#F0F0F0] to-[#616161];
   }
   .styleSection {
     @apply flex gap-3 max-w-screen-lg px-[1rem]  w-full mx-auto;
@@ -75,13 +75,13 @@ body {
     @apply transition-shadow duration-300 ease-in hover:shadow-md hover:shadow-neutral-50/90;
   }
   .boxWrapper {
-    @apply bg-gradient-to-br from-[#E3E3E3] via-[#3D3D3D] to-[#3D3D3D] transition-shadow duration-300 ease-in group-hover:shadow-lg group-hover:shadow-neutral-50/50;
+    @apply bg-gradient-to-br from-[#E3E3E3] via-[#121212] to-[#121212] transition-shadow duration-300 ease-in group-hover:shadow-lg group-hover:shadow-neutral-50/50;
   }
   .boxContain {
-    @apply bg-[#141414] flex items-center gap-2;
+    @apply bg-[#121212] flex items-center gap-2;
   }
   .sideLine {
-    @apply before:flex before:content-[''] before:absolute before:bg-gradient-to-b before:from-transparent before:via-neutral-300 before:to-transparent before:w-[3px] before:h-[100%] before:top-[30px] before:left-[18px] before:max-[600px]:left-[14px];
+    @apply before:flex before:content-[''] before:absolute before:bg-gradient-to-b before:from-transparent before:via-neutral-300 before:to-transparent before:w-[3px] max-[600px]:before:w-[1px] before:h-[100%] before:top-[30px] before:left-[18px] before:max-[600px]:left-[14px];
   }
   .separator {
     @apply relative w-full h-[2px] bg-gradient-to-l from-transparent via-neutral-700 to-transparent my-[4rem] before:absolute before:w-full before:h-[2px] before:bg-gradient-to-l before:from-transparent before:via-neutral-600 before:to-transparent before:z-[-2] before:blur-sm;
