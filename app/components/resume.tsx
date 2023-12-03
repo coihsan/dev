@@ -20,7 +20,10 @@ export default function Experties() {
             {/* start content */}
             <div className="pt-[2rem] grid grid-cols-2 gap-3 max-[600px]:grid-cols-1 max-w-full">
               {ResumeData.map((history) => (
-                <div className="boxWrapper group p-px rounded-[20px]">
+                <div
+                  key={history.id}
+                  className="boxWrapper group p-px rounded-[20px]"
+                >
                   <div className="flex items-center boxFill px-8 py-4 bg-[#1B1B1B] rounded-[20px] max-w-full">
                     <Image
                       className="fill-white"

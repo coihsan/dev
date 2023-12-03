@@ -16,7 +16,7 @@ export default function Experties() {
             <h3 className="headingStyle align-baseline pl-[1rem]">Experties</h3>
           </div>
 
-          <div className="pl-[3.7rem] max-[600px]:pl-[3.1rem]">
+          <div className="pl-[3.7rem] max-[600px]:pl-[2rem]">
             <span className="text-[#E3E3E3] max-w-3xl">
               I can handle jobs like a Digital Marketing, Build a Web, and
               Graphic Design in the marketing department with a team or
@@ -30,9 +30,9 @@ export default function Experties() {
                 {skillList.map((item) => (
                   <div
                     key={item.id}
-                    className="boxWrapper p-px group rounded-[20px] transition-colors duration-500 ease-linear"
+                    className="boxWrapper p-px group rounded-[15px] transition-colors duration-500 ease-linear"
                   >
-                    <div className="flex items-center boxFill justify-start gap-4 p-4 h-[81px] max-[600px]:flex-col rounded-[20px] bg-[#1B1B1B]">
+                    <div className="flex items-center boxFill justify-start gap-4 p-4 h-[81px] max-[600px]:flex-col rounded-[15px] bg-[#121212]">
                       <Image
                         className="max-w-[40px] max-[600px]:max-w-[25px] max-[600px]:max-h-[25px] max-h-[40px]"
                         src={item.src}
@@ -57,7 +57,7 @@ export default function Experties() {
                     key={items.id}
                     className="boxWrapper group p-px rounded-full"
                   >
-                    <div className="flex items-center boxFill justify-start gap-2 px-4 py-2 rounded-full bg-[#1B1B1B]">
+                    <div className="flex items-center boxFill justify-start gap-2 px-4 py-2 rounded-full bg-[#121212]">
                       <span className="leading-none">{items.title}</span>
                     </div>
                   </div>

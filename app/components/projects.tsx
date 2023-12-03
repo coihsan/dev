@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ProjectList } from "../constants/indexProjects";
+import ReadMoreOverlay from "../UI/ReadMoreOverlay";
 export default function Projects() {
   return (
     <section className="relative  w-full">
@@ -18,18 +19,20 @@ export default function Projects() {
             </h3>
           </div>
 
-          <div className="pl-[3.7rem] max-[600px]:pl-[3.1rem] w-full">
+          <div className="pl-[3.7rem] max-[600px]:pl-[2rem] w-full">
             <div className="pt-[2rem] grid grid-cols-2 gap-3 max-[600px]:grid-cols-1 w-full">
               {ProjectList.map((ProjectList) => (
                 <div
                   key={ProjectList.id}
                   className="boxWrapper rounded-[20px] p-px w-full"
                 >
-                  <div className="rounded-[20px] group p-4 flex flex-col items-start gap-3 boxFill bg-[#141414] w-full overflow-hidden">
+                  <div className="rounded-[20px] group p-4 flex flex-col items-start gap-3 boxFill bg-[#121212] w-full overflow-hidden">
                     <div className="group overflow-hidden rounded-[20px]">
-                      <img
+                      <Image
                         className="rounded-[20px] max-w-full object-contain h-full group-hover:scale-[1.1] transition-transform ease-in-out duration-300"
                         src={ProjectList.imageLink}
+                        width={500}
+                        height={200}
                         alt="image"
                       />
                     </div>
@@ -67,8 +70,8 @@ export default function Projects() {
                           <Image
                             className=""
                             src={"/download.svg"}
-                            width={18}
-                            height={18}
+                            width={12}
+                            height={12}
                             alt="github"
                           />
                         </a>
@@ -82,6 +85,7 @@ export default function Projects() {
           </div>
         </div>
       </div>
+      <ReadMoreOverlay />
     </section>
   );
 }
