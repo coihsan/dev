@@ -59,7 +59,7 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
             transition={{ delay: 0.3, duration: 2 }}
-            className="max-[600px]:mx-auto w-max bg-neutral-800 rounded-full px-4 py-1 font-medium"
+            className="max-[600px]:mx-auto w-max  px-4 py-1 font-medium"
           >
             {greeting} 👋🏻
           </motion.span>
@@ -82,9 +82,9 @@ export default function Hero() {
                 animate="visible"
                 transition={{ delay: 0.6 }}
                 key={index.id}
-                className="flex items-center gap-2 font-medium px-3 py-1 bg-[#000] rounded-full"
+                className="flex items-center gap-2 font-medium px-3 py-1 border rounded-full"
               >
-                <Image src={index.svg} width={30} height={30} alt="icon" />
+                <Image src={index.svg} width={20} height={20} alt="icon" />
                 <h3>{index.title}</h3>
               </motion.div>
             ))}
