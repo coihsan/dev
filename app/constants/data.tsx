@@ -2,10 +2,12 @@ export const position = [
   {
     id: 0,
     title: "Digital Marketing",
+    svg: "/globe.svg",
   },
   {
     id: 1,
     title: "Frontend Dev",
+    svg: "/layout.svg",
   },
 ];
 

@@ -82,17 +82,9 @@ export default function Hero() {
                 animate="visible"
                 transition={{ delay: 0.6 }}
                 key={index.id}
-                className="flex items-center gap-2 font-medium"
+                className="flex items-center gap-2 font-medium px-3 py-1 bg-[#000] rounded-full"
               >
-                <svg
-                  className="rotate-[45deg] fill-white"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M10 3H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM9 9H5V5h4v4zm5 2h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm1-6h4v4h-4V5zM3 20a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v6zm2-5h4v4H5v-4zm8 5a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v6zm2-5h4v4h-4v-4z"></path>
-                </svg>
+                <Image src={index.svg} width={30} height={30} alt="icon" />
                 <h3>{index.title}</h3>
               </motion.div>
             ))}
