@@ -89,4 +89,7 @@ body {
   .separator {
     @apply relative w-full h-[2px] bg-gradient-to-l from-transparent via-neutral-700 to-transparent my-[4rem] before:absolute before:w-full before:h-[2px] before:bg-gradient-to-l before:from-transparent before:via-neutral-600 before:to-transparent before:z-[-2] before:blur-sm;
   }
+  .blockText {
+    @apply underline font-bold decoration-solid decoration-white;
+  }
 }

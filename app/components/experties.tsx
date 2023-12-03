@@ -18,9 +18,11 @@ export default function Experties() {
 
           <div className="pl-[3.7rem] max-[600px]:pl-[2rem]">
             <span className="text-[#E3E3E3] max-w-3xl">
-              I can handle jobs like a Digital Marketing, Build a Web, and
-              Graphic Design in the marketing department with a team or
-              individually.
+              I can handle jobs like a{" "}
+              <em className="blockText">Digital Marketing</em>,{" "}
+              <em className="blockText">Graphic Design</em> and{" "}
+              <em className="blockText">Web Development</em> in the marketing
+              department with a team or individually.
             </span>
             <div className="pt-[2rem]">
               <h1 className="font-medium text-[1.5rem] pb-[1rem]">

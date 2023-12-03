@@ -7,13 +7,14 @@ import CopyButton from "../UI/CopyButton";
 import { motion } from "framer-motion";
 // import { container, item } from "../constants/animate";
 const container = {
-  hidden: { opacity: 0, y: 50 },
+  hidden: { opacity: 0, y: -100 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      delayChildren: 0.3,
-      staggerChildren: 0.2,
+      delay: 1.4,
+      delayChildren: 3,
+      staggerChildren: 2,
     },
   },
 };
@@ -40,7 +41,7 @@ export default function Hero() {
     <section className="relative  w-full h-[100%]">
       <div className="styleSection max-[600px]:py-[4rem] py-[7rem] flex items-center justify-start max-[600px]:flex-col max-[600px]:justify-center max-[600px]:items-center">
         <motion.div
-          className="rounded-[54px] relative"
+          className="rounded-[54px] relative overflow-hidden"
           variants={container}
           initial="hidden"
           animate="visible"
@@ -65,7 +66,7 @@ export default function Hero() {
           </motion.p>
           <div>
             <motion.h2
-              className="text-7xl max-[600px]:text-6xl py-[2rem] font-bold max-[600px]:text-center"
+              className="text-7xl max-[600px]:text-6xl py-[2rem] font-bold max-[600px]:text-center drop-shadow-[0_5px_35px_rgba(255,255,255,0.5)] transition-all ease-linear duration-300 hover:drop-shadow-[0_5px_35px_rgba(255,255,255,1)]"
               variants={item}
               initial="hidden"
               animate="visible"
@@ -82,10 +83,10 @@ export default function Hero() {
                 animate="visible"
                 transition={{ delay: 0.6 }}
                 key={index.id}
-                className="flex items-center gap-2 font-medium px-3 py-1 border rounded-full"
+                className="flex items-center gap-1 font-medium px-3 py-1 border rounded-full"
               >
-                <Image src={index.svg} width={20} height={20} alt="icon" />
                 <h3>{index.title}</h3>
+                <Image src={index.svg} width={20} height={20} alt="icon" />
               </motion.div>
             ))}
           </div>
@@ -110,7 +111,7 @@ export default function Hero() {
                   initial="hidden"
                   animate="visible"
                   transition={{ delay: 0.8, type: "spring", stiffness: 100 }}
-                  className="hover:underline"
+                  className="hover:underline font-bold"
                   target="_blank"
                   href="https://skillshop.exceedlms.com/profiles/038b28dd54cb4f11bd4668684c05e95f"
                 >
@@ -124,7 +125,7 @@ export default function Hero() {
                   initial="hidden"
                   animate="visible"
                   transition={{ delay: 0.9 }}
-                  className="hover:underline"
+                  className="hover:underline font-bold"
                   target="_blank"
                   href="https://scl.io/49LUWUx"
                 >
