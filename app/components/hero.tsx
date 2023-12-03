@@ -29,7 +29,7 @@ export default function Hero() {
   const times = new Date().getHours();
   var greeting;
 
-  if (!(times > 3 && times < 12)) {
+  if (!(times >= 3 && times < 12)) {
     greeting = "Good Morning";
   } else if (!(times >= 12 && times < 17)) {
     greeting = "Good Afternoon";
@@ -54,7 +54,7 @@ export default function Hero() {
           />
         </motion.div>
         <div className="pl-[3rem] flex flex-col gap-3 max-[600px]:pl-[0rem] ">
-          <motion.span
+          <motion.p
             variants={item}
             initial="hidden"
             animate="visible"
@@ -62,7 +62,7 @@ export default function Hero() {
             className="max-[600px]:mx-auto w-max  px-4 py-1 font-medium"
           >
             {greeting} 👋🏻
-          </motion.span>
+          </motion.p>
           <div>
             <motion.h2
               className="text-7xl max-[600px]:text-6xl py-[2rem] font-bold max-[600px]:text-center"
