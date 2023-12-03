@@ -30,7 +30,7 @@ export default function Experties() {
                 {skillList.map((item) => (
                   <div
                     key={item.id}
-                    className="boxWrapper p-px group rounded-[15px] transition-colors duration-500 ease-linear"
+                    className="boxWrapper p-px group rounded-[15px] transition-colors duration-500 ease-linear "
                   >
                     <div className="flex items-center boxFill justify-start gap-4 p-4 h-[81px] max-[600px]:flex-col rounded-[15px] bg-[#121212]">
                       <Image

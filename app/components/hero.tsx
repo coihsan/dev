@@ -98,7 +98,7 @@ export default function Hero() {
             ))}
           </div>
           <motion.div
-            className="flex gap-3 items-center max-[600px]:mx-auto"
+            className="flex gap-3 items-center max-[600px]:mx-auto max-[390px]:flex-col"
             variants={item}
             initial="hidden"
             animate="visible"

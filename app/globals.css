@@ -81,7 +81,7 @@ body {
     @apply bg-[#121212] flex items-center gap-2;
   }
   .sideLine {
-    @apply before:flex before:content-[''] before:absolute before:bg-gradient-to-b before:from-transparent before:via-neutral-300 before:to-transparent before:w-[3px] max-[600px]:before:w-[1px] before:h-[100%] before:top-[30px] before:left-[18px] before:max-[600px]:left-[14px];
+    @apply before:flex before:content-[''] before:absolute before:bg-gradient-to-b before:from-transparent before:via-neutral-300 before:to-transparent before:w-[2px] max-[600px]:before:w-[1px] before:h-[100%] before:top-[30px] before:left-[18px] before:max-[600px]:left-[14px];
   }
   .separator {
     @apply relative w-full h-[2px] bg-gradient-to-l from-transparent via-neutral-700 to-transparent my-[4rem] before:absolute before:w-full before:h-[2px] before:bg-gradient-to-l before:from-transparent before:via-neutral-600 before:to-transparent before:z-[-2] before:blur-sm;

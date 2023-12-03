@@ -49,7 +49,7 @@ export default function Projects() {
                         />
                         <span>{ProjectList.codeProject}</span>
                       </p>
-                      <div className="grid grid-cols-2 items-center justify-center gap-2 max-[780px]:grid  w-full">
+                      <div className="flex items-center justify-start gap-2 w-full">
                         <a
                           className="gap-2 flex px-4 py-1 rounded-full hover:bg-[#474747] bg-[#262626] transition-colors ease-in-out duration-500"
                           href={ProjectList.urlPreview}
@@ -64,9 +64,9 @@ export default function Projects() {
                         </a>
                         <a
                           href={ProjectList.urlDownload}
-                          className="gap-2 px-4 py-1 flex items-center rounded-full hover:bg-[#474747] bg-[#262626] transition-colors ease-in-out duration-500"
+                          className="gap-2 px-4 py-1 w-max flex items-center rounded-full hover:bg-[#474747] bg-[#262626] transition-colors ease-in-out duration-500"
                         >
-                          <span className="text-[14px]">Download ZIP</span>
+                          <span className="text-[14px]">ZIP</span>
                           <Image
                             className=""
                             src={"/download.svg"}
