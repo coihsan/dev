@@ -27,16 +27,6 @@ const item = {
 };
 
 export default function Hero() {
-  const times = new Date().getHours();
-  var greeting;
-
-  if (!(times >= 3 && times < 12)) {
-    greeting = "Good Morning";
-  } else if (!(times >= 12 && times < 17)) {
-    greeting = "Good Afternoon";
-  } else {
-    greeting = "Good Evening";
-  }
   return (
     <section className="relative  w-full h-[100%]">
       <div className="styleSection max-[600px]:py-[4rem] py-[7rem] flex items-center justify-start max-[600px]:flex-col max-[600px]:justify-center max-[600px]:items-center">
@@ -55,18 +45,9 @@ export default function Hero() {
           />
         </motion.div>
         <div className="pl-[3rem] flex flex-col gap-3 max-[600px]:pl-[0rem] ">
-          <motion.p
-            variants={item}
-            initial="hidden"
-            animate="visible"
-            transition={{ delay: 0.3 }}
-            className="max-[600px]:mx-auto w-max font-medium"
-          >
-            {greeting} 👋🏻
-          </motion.p>
           <div>
             <motion.h2
-              className="text-7xl max-[600px]:text-6xl py-[1rem] font-bold max-[600px]:text-center drop-shadow-[0_5px_35px_rgba(255,255,255,0.5)] transition-all ease-linear duration-300 hover:drop-shadow-[0_5px_35px_rgba(255,255,255,1)]"
+              className="text-7xl max-[600px]:text-6xl pb-[2rem] font-bold max-[600px]:text-center drop-shadow-[0_5px_35px_rgba(255,255,255,0.5)] transition-all ease-linear duration-300 hover:drop-shadow-[0_5px_35px_rgba(255,255,255,1)]"
               variants={item}
               initial="hidden"
               animate="visible"
