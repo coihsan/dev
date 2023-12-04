@@ -124,7 +124,7 @@ export default function Hero() {
                   variants={item}
                   initial="hidden"
                   animate="visible"
-                  transition={{ delay: 0.9 }}
+                  transition={{ delay: 0.9, type: "spring", stiffness: 100 }}
                   className="hover:underline font-bold"
                   target="_blank"
                   href="https://scl.io/49LUWUx"

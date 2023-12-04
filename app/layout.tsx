@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Overlay from "./UI/Overlay";
+import OverlayTop from "./UI/OverlayTop";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -17,6 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <main>
+          <OverlayTop />
           {children}
           <Overlay />
         </main>

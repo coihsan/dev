@@ -16,7 +16,7 @@ export default function Home() {
       <Experties />
       <div className="separator"></div>
       <Projects />
-      <div className="overflow-y-hidden relative contactSection max-[600px]:bg-top bg-fixed max-[780px]:before:translate-y-[-55%] w-full h-full">
+      <div className="overflow-y-hidden relative contactSection max-[600px]:bg-top bg-fixed max-[780px]:before:translate-y-[5%] w-full h-full">
         <Contact />
       </div>
     </main>
