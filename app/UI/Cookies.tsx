@@ -9,7 +9,7 @@ export default function Cookies() {
     setIsClose(true);
   };
   return (
-    <div className="z-50 p-5 fixed bottom-0 mx-auto w-[80%] max-h-[200px] max-[600px]:w-full bg-[#09090b] border rounded-lg">
+    <div className={"z-50 p-5 fixed bottom-0 mx-auto w-[80%] max-h-[200px] max-[600px]:w-full bg-[#09090b] border rounded-lg ${isClose ? translate-y} translate-0 "}>
       <div className="flex items-center justify-between gap-5">
         <div className="flex items-center gap-5">
           {/* <svg
