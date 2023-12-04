@@ -7,22 +7,22 @@ import CopyButton from "../UI/CopyButton";
 import { motion } from "framer-motion";
 // import { container, item } from "../constants/animate";
 const container = {
-  hidden: { opacity: 0, y: -100 },
+  hidden: { opacity: 0, y: 100 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 1.4,
-      delayChildren: 3,
-      staggerChildren: 2,
+      delayChildren: 0.3,
+      staggerChildren: 0.2,
     },
   },
 };
 
 const item = {
-  hidden: { opacity: 0 },
+  hidden: { opacity: 0, y: 50 },
   visible: {
     opacity: 1,
+    y: 0,
   },
 };
 
@@ -59,18 +59,18 @@ export default function Hero() {
             variants={item}
             initial="hidden"
             animate="visible"
-            transition={{ delay: 0.3, duration: 2 }}
-            className="max-[600px]:mx-auto w-max  px-4 py-1 font-medium"
+            transition={{ delay: 0.3 }}
+            className="max-[600px]:mx-auto w-max font-medium"
           >
             {greeting} 👋🏻
           </motion.p>
           <div>
             <motion.h2
-              className="text-7xl max-[600px]:text-6xl py-[2rem] font-bold max-[600px]:text-center drop-shadow-[0_5px_35px_rgba(255,255,255,0.5)] transition-all ease-linear duration-300 hover:drop-shadow-[0_5px_35px_rgba(255,255,255,1)]"
+              className="text-7xl max-[600px]:text-6xl py-[1rem] font-bold max-[600px]:text-center drop-shadow-[0_5px_35px_rgba(255,255,255,0.5)] transition-all ease-linear duration-300 hover:drop-shadow-[0_5px_35px_rgba(255,255,255,1)]"
               variants={item}
               initial="hidden"
               animate="visible"
-              transition={{ delay: 0.4, duration: 2 }}
+              transition={{ delay: 0.3 }}
             >
               ˗ˏˋ Ihsan ˎˊ
             </motion.h2>
