@@ -66,8 +66,8 @@ export default function Hero() {
                 key={index.id}
                 className="flex items-center gap-1 font-medium px-3 py-1 border rounded-full"
               >
-                <h3>{index.title}</h3>
                 <Image src={index.svg} width={20} height={20} alt="icon" />
+                <h3>{index.title}</h3>
               </motion.div>
             ))}
           </div>

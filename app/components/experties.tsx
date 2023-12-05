@@ -34,7 +34,7 @@ export default function Experties() {
                     key={item.id}
                     className="boxWrapper p-px group rounded-[15px] transition-colors duration-500 ease-linear "
                   >
-                    <div className="flex items-center boxFill justify-start gap-4 p-4 h-[81px] max-[600px]:flex-col rounded-[15px] bg-[#121212]">
+                    <div className="flex items-center boxFill justify-start gap-4 p-4 h-[81px] max-[600px]:h-[60px] rounded-[15px] bg-[#121212]">
                       <Image
                         className="max-w-[40px] max-[600px]:max-w-[25px] max-[600px]:max-h-[25px] max-h-[40px]"
                         src={item.src}

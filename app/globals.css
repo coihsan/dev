@@ -74,7 +74,7 @@ body {
     @apply transition-shadow duration-300 ease-in hover:shadow-md hover:shadow-neutral-50/90;
   }
   .boxWrapper {
-    @apply bg-gradient-to-br from-[#E3E3E3] via-[#121212] to-[#121212] transition-shadow duration-300 ease-in group-hover:shadow-lg group-hover:shadow-neutral-50/50;
+    @apply bg-gradient-to-br from-[#E3E3E3] via-[#303030] to-[#303030] transition-shadow duration-300 ease-in group-hover:shadow-lg group-hover:shadow-neutral-50/50;
   }
   .hoverShadow {
     @apply;
