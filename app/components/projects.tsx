@@ -23,7 +23,7 @@ export default function Projects() {
             <div className="pt-[2rem] grid grid-cols-2 gap-3 max-[600px]:grid-cols-1 w-full">
               {ProjectList.map((ProjectList) => (
                 <div key={ProjectList.id} className=" rounded-[20px] w-full">
-                  <div className="rounded-[20px] group p-4 flex flex-col items-start gap-3 bg-[#121212] border border-[#4C4C4C] hover:border-white  transition-colors duration-300 ease-linear hover:bg-neutral-800  w-full overflow-hidden">
+                  <div className="rounded-[20px] group p-4 flex flex-col items-start gap-3 bg-[#121212] max-[600px]:bg-neutral-900 max-[600px]:borderneutral-400 border border-[#4C4C4C] hover:border-white  transition-colors duration-300 ease-linear hover:bg-neutral-800  w-full overflow-hidden">
                     <div className="group overflow-hidden rounded-[20px]">
                       <Image
                         className="rounded-[20px] max-w-full object-contain h-full group-hover:scale-[1.1] transition-transform ease-in-out duration-300"

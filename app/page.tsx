@@ -7,6 +7,9 @@ import Resume from "./components/resume";
 import Contact from "./components/contact";
 import Cookies from "./UI/Cookies";
 
+import { useEffect } from "react";
+import { initGA, logPageView } from "./utils/ga";
+
 export default function Home() {
   return (
     <main>

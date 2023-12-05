@@ -1,4 +1,5 @@
 import "./globals.css";
+
 import { Inter } from "next/font/google";
 import Overlay from "./UI/Overlay";
 import OverlayTop from "./UI/OverlayTop";
