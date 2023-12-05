@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Experties from "./components/experties";
 import Header from "./components/header";
@@ -7,13 +8,22 @@ import Resume from "./components/resume";
 import Contact from "./components/contact";
 import Cookies from "./UI/Cookies";
 
-import { useEffect } from "react";
-import { initGA, logPageView } from "./utils/ga";
+import Script from "next/script";
 
 export default function Home() {
   return (
     <main>
       <div className="heroSection">
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-GFF36FH35B" />
+        <Script id="google-analytics">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-GFF36FH35B');
+        `}
+        </Script>
         <Header />
         <Hero />
       </div>
