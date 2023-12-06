@@ -20,6 +20,10 @@
   padding: 0;
   margin: 0;
 }
+::selection {
+  background-color: #f0f0f0;
+  color: #09090b;
+}
 body {
   color: #f0f0f0;
   background-color: #09090b;

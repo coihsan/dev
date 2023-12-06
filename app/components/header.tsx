@@ -5,7 +5,9 @@ export default function Header() {
         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-500 opacity-75"></span>
         <span className="relative inline-flex rounded-full h-3 w-3 bg-teal-500"></span>
       </div>
-      <h4>Available for Freelance Projects</h4>
+      <h4 className="font-medium max-[600px]:text-[12px]">
+        Available for Freelance Projects
+      </h4>
     </header>
   );
 }
