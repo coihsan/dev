@@ -1,12 +1,20 @@
+"use client";
 import Image from "next/image";
 import { ProjectList } from "../constants/indexProjects";
 import ReadMoreOverlay from "../UI/ReadMoreOverlay";
+import { motion, whileInView } from "framer-motion";
 export default function Projects() {
   return (
     <section className="relative  w-full">
       <div className="styleSection ">
         <div className="flex flex-col relative">
-          <div className="flex items-center sideLine ">
+          <motion.div
+            className="flex items-center sideLine "
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1 }}
+            viewport={{ once: true }}
+          >
             <Image
               className="align-baseline max-[600px]:w-[30px]"
               src={"/developertv.svg"}
@@ -17,12 +25,19 @@ export default function Projects() {
             <h3 className="headingStyle align-baseline pl-[1rem]">
               Code for Fun
             </h3>
-          </div>
+          </motion.div>
 
           <div className="pl-[3.7rem] max-[600px]:pl-[2rem] w-full">
             <div className="pt-[2rem] grid grid-cols-2 gap-3 max-[600px]:grid-cols-1 w-full">
               {ProjectList.map((ProjectList) => (
-                <div key={ProjectList.id} className=" rounded-[20px] w-full">
+                <motion.div
+                  key={ProjectList.id}
+                  className=" rounded-[20px] w-full"
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1.8, delay: 1.8 }}
+                  viewport={{ once: true }}
+                >
                   <div className="rounded-[20px] group p-4 flex flex-col items-start gap-3 bg-[#121212] max-[600px]:bg-neutral-900 max-[600px]:borderneutral-400 border border-[#4C4C4C] hover:border-white  transition-colors duration-300 ease-linear hover:bg-neutral-800  w-full overflow-hidden">
                     <div className="group overflow-hidden rounded-[20px]">
                       <Image
@@ -75,7 +90,7 @@ export default function Projects() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
             {/* end content */}
