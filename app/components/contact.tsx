@@ -9,10 +9,16 @@ export default function Contact() {
       className="relative  before:-z-10 px-[2rem] py-[7rem]"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 1, delay: 1 }}
+      transition={{ duration: 3, delay: 2 }}
       viewport={{ once: true }}
     >
-      <div className="max-w-[667px] mx-auto flex flex-col items-center gap-8 max-[1068px]:pt-[7rem]  lg:pt-[15rem] max-[600px]:pt-[3rem]">
+      <motion.div
+        className="max-w-[667px] mx-auto flex flex-col items-center gap-8 max-[1068px]:pt-[7rem]  lg:pt-[15rem] max-[600px]:pt-[3rem]"
+        initial={{ y: 30 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 3, delay: 1 }}
+        viewport={{ once: true }}
+      >
         <h1 className="text-center text-[2.2rem] max-[600px]:text-[1.3rem] leading-tight font-bold">
           In need of a designer/developer?
         </h1>
@@ -37,7 +43,7 @@ export default function Contact() {
           />
         </div>
         <Footer />
-      </div>
+      </motion.div>
     </motion.section>
   );
 }
