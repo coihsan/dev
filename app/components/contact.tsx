@@ -5,15 +5,9 @@ import Footer from "../components/footer";
 import { motion, whileInView } from "framer-motion";
 export default function Contact() {
   return (
-    <motion.section
-      className="relative  before:-z-10 px-[2rem] py-[7rem]"
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 3, delay: 2 }}
-      viewport={{ once: true }}
-    >
+    <section className="relative  before:-z-10 px-[2rem] py-[7rem]">
       <motion.div
-        className="max-w-[667px] mx-auto flex flex-col items-center gap-8 max-[1068px]:pt-[7rem]  lg:pt-[15rem] max-[600px]:pt-[3rem]"
+        className="max-w-[667px] mx-auto flex flex-col items-center gap-8 max-[1068px]:pt-[7rem] lg:pt-[15rem] max-[600px]:pt-[3rem]"
         initial={{ y: 30 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 3, delay: 1 }}
@@ -44,6 +38,6 @@ export default function Contact() {
         </div>
         <Footer />
       </motion.div>
-    </motion.section>
+    </section>
   );
 }
