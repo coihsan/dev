@@ -26,13 +26,13 @@ export default function Projects() {
               {ProjectList.map((ProjectList) => (
                 <motion.div
                   key={ProjectList.id}
-                  className=" rounded-[20px] w-full"
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1.8, delay: 1 }}
+                  className="rounded-[20px] w-full group "
+                  initial={{ scale: 0.8, opacity: 0, y: 10 }}
+                  whileInView={{ scale: 1, opacity: 1, y: 0 }}
+                  transition={{ duration: 1.5, delay: 1 }}
                   viewport={{ once: true }}
                 >
-                  <div className="rounded-[20px] group p-4 flex flex-col items-start gap-3 bg-[#121212] max-[600px]:bg-neutral-900 max-[600px]:borderneutral-400 border border-[#4C4C4C] hover:border-white  transition-colors duration-300 ease-linear hover:bg-neutral-800  w-full overflow-hidden">
+                  <div className="rounded-[20px] p-4 flex flex-col items-start gap-3 bg-[#121212] max-[600px]:bg-neutral-900 max-[600px]:borderneutral-400 border border-[#4C4C4C] hover:border-white  transition-colors duration-300 ease-linear hover:bg-neutral-800  w-full overflow-hidden">
                     <div className="group overflow-hidden rounded-[20px]">
                       <Image
                         className="rounded-[20px] max-w-full object-contain h-full group-hover:scale-[1.1] transition-transform ease-in-out duration-300"

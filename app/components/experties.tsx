@@ -55,8 +55,8 @@ export default function Experties() {
                   <motion.div
                     key={item.id}
                     className="boxWrapper p-px group rounded-[15px] transition-colors duration-500 ease-linear "
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
+                    initial={{ scale: 0.8, opacity: 0, y: 50 }}
+                    whileInView={{ scale: 1, opacity: 1, y: 0 }}
                     transition={{ duration: 1.5, delay: 1 }}
                     viewport={{ once: true }}
                   >
@@ -78,8 +78,8 @@ export default function Experties() {
             <div className="pt-[2rem]">
               <motion.h1
                 className="font-medium text-[1.5rem] pb-[1rem]"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ scale: 0.8, opacity: 0, y: 50 }}
+                whileInView={{ scale: 1, opacity: 1, y: 0 }}
                 transition={{ duration: 1.5, delay: 1 }}
                 viewport={{ once: true }}
               >

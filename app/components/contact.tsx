@@ -10,7 +10,7 @@ export default function Contact() {
         className="max-w-[667px] mx-auto flex flex-col items-center gap-8 max-[1068px]:pt-[7rem] lg:pt-[15rem] max-[600px]:pt-[3rem]"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 2, delay: 1 }}
+        transition={{ duration: 2, delay: 2 }}
         viewport={{ once: true }}
       >
         <h1 className="text-center text-[2.2rem] max-[600px]:text-[1.3rem] leading-tight font-bold">

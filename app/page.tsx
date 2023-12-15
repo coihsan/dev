@@ -7,7 +7,7 @@ import Projects from "./components/projects";
 import Resume from "./components/resume";
 import Contact from "./components/contact";
 import Cookies from "./UI/Cookies";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import Script from "next/script";
 
 export default function Home() {
@@ -30,7 +30,13 @@ export default function Home() {
       <Experties />
       <div className="separator"></div>
       <Projects />
-      <motion.div className="overflow-y-hidden relative contactSection max-[600px]:bg-top bg-fixed max-[780px]:before:translate-y-[5%] w-full h-full">
+      <motion.div
+        className="overflow-y-hidden relative contactSection max-[600px]:bg-top bg-fixed max-[780px]:before:translate-y-[5%] w-full h-full"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 1 }}
+        viewport={{ once: true }}
+      >
         <Contact />
       </motion.div>
       <Cookies />
