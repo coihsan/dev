@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { ProjectList } from "../constants/indexProjects";
 import ReadMoreOverlay from "../UI/ReadMoreOverlay";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 export default function Projects() {
   return (
     <section className="relative  w-full">
