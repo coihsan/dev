@@ -29,7 +29,7 @@ export default function Projects() {
                   className=" rounded-[20px] w-full"
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1.8, delay: 1.8 }}
+                  transition={{ duration: 1.8, delay: 1 }}
                   viewport={{ once: true }}
                 >
                   <div className="rounded-[20px] group p-4 flex flex-col items-start gap-3 bg-[#121212] max-[600px]:bg-neutral-900 max-[600px]:borderneutral-400 border border-[#4C4C4C] hover:border-white  transition-colors duration-300 ease-linear hover:bg-neutral-800  w-full overflow-hidden">
