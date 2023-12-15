@@ -1,11 +1,12 @@
 "use client";
 import { motion, useInView } from "framer-motion";
 import React, { useRef, ReactNode } from "react";
-interface AnimatedProps {
+export interface AnimatedProps {
   children: ReactNode;
-  className: string;
+  className?: string;
+  key?: string | number;
 }
-export function Animated({ children, className }: AnimatedProps) {
+export function Animated({ children, className, key }: AnimatedProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 

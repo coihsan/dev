@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { Animated } from "../UI/animate";
+import { Animated, AnimatedProps } from "../UI/animate";
 import { skillList, commonjob } from "../constants/data";
 export default function Experties() {
   return (
@@ -17,40 +17,43 @@ export default function Experties() {
               height={40}
               alt="icon terminal"
             />
-            <Animated className="headingStyle align-baseline pl-[1rem]">
-              Experties
+            <Animated>
+              <span className="headingStyle align-baseline pl-[1rem]">
+                Experties
+              </span>
             </Animated>
           </motion.div>
 
           <div className="pl-[3.7rem] max-[600px]:pl-[2rem]">
-            <motion.span className="text-[#E3E3E3] max-w-3xl">
+            <Animated className="text-[#E3E3E3] max-w-3xl">
               I can handle jobs like a{" "}
               <em className="blockText">Digital Marketing</em>,{" "}
               <em className="blockText">Graphic Design</em> and{" "}
               <em className="blockText">Web Development</em> in the marketing
               department with a team or individually.
-            </motion.span>
+            </Animated>
             <div className="pt-[2rem]">
-              <motion.h1 className="font-medium text-[1.5rem] pb-[1rem]">
-                Tech Stack
-              </motion.h1>
+              <Animated>
+                <h1 className="font-medium text-[1.5rem] pb-[1rem]">
+                  Tech Stack
+                </h1>
+              </Animated>
               <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2  max-[600px]:grid-cols-2 gap-[10px] w-full">
                 {skillList.map((item) => (
-                  <motion.div
-                    key={item.id}
-                    className="boxWrapper p-px group rounded-[15px] transition-colors duration-500 ease-linear "
-                  >
-                    <div className="flex items-center boxFill justify-start gap-4 p-4 h-[81px] max-[600px]:h-[60px] rounded-[15px] bg-[#121212]">
-                      <Image
-                        className="max-w-[40px] max-[600px]:max-w-[25px] max-[600px]:max-h-[25px] max-h-[40px]"
-                        src={item.src}
-                        width={40}
-                        height={40}
-                        alt={item.alt}
-                      />
-                      <span className="leading-none">{item.title}</span>
+                  <Animated key={item.id}>
+                    <div className="boxWrapper p-px group rounded-[15px] transition-colors duration-500 ease-linear ">
+                      <div className="flex items-center boxFill justify-start gap-4 p-4 h-[81px] max-[600px]:h-[60px] rounded-[15px] bg-[#121212]">
+                        <Image
+                          className="max-w-[40px] max-[600px]:max-w-[25px] max-[600px]:max-h-[25px] max-h-[40px]"
+                          src={item.src}
+                          width={40}
+                          height={40}
+                          alt={item.alt}
+                        />
+                        <span className="leading-none">{item.title}</span>
+                      </div>
                     </div>
-                  </motion.div>
+                  </Animated>
                 ))}
               </div>
             </div>
