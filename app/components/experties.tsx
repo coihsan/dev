@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import { useRef } from "react";
-import { motion, whileInView } from "framer-motion";
-import Animated from "../UI/animate";
+import { motion, useInView } from "framer-motion";
+import { Animated } from "../UI/animate";
 import { skillList, commonjob } from "../constants/data";
 export default function Experties() {
   return (

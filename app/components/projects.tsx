@@ -2,19 +2,13 @@
 import Image from "next/image";
 import { ProjectList } from "../constants/indexProjects";
 import ReadMoreOverlay from "../UI/ReadMoreOverlay";
-import { motion, whileInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 export default function Projects() {
   return (
     <section className="relative  w-full">
       <div className="styleSection ">
         <div className="flex flex-col relative">
-          <motion.div
-            className="flex items-center sideLine "
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1 }}
-            viewport={{ once: true }}
-          >
+          <motion.div className="flex items-center sideLine ">
             <Image
               className="align-baseline max-[600px]:w-[30px]"
               src={"/developertv.svg"}
